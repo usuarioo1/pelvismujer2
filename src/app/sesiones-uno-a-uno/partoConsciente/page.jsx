@@ -39,6 +39,10 @@ const page = () => {
                             </p>
                         </div>
 
+                        <div>
+                            <h3 className="mb-4 text-2xl font-bold text-gray-900">Modalidad <strong>Presencial</strong> y <strong>Online</strong></h3>
+                        </div>
+
                         {/* Services Included */}
                         <div className="mb-8">
                             <h3 className="mb-6 text-2xl font-bold text-gray-900">Este servicio incluye:</h3>
@@ -130,13 +134,13 @@ const page = () => {
                                         <p className="text-gray-600 leading-relaxed">Para aliviar el dolor y mantener la calma.</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div>  
                         </div>
 
                         {/* Additional Info */}
                         <div className="rounded-xl bg-rose-50 p-6">
                             <p className="mb-3 text-gray-700 leading-relaxed">
-                                Además, puedes participar junto a tu acompañante, creando un espacio de conexión y apoyo.
+                                Este espacio es para ti si quieres llevar tú gestación como un ciclo de autoconocimiento y tranformación. Puedes participar junto a tu acompañante, creando un espacio de conexion y apoyo.
                             </p>
                             <div className="flex items-start gap-3">
                                 <svg className="mt-1 h-5 w-5 flex-shrink-0 text-rose-600" fill="currentColor" viewBox="0 0 20 20">
@@ -148,6 +152,9 @@ const page = () => {
                                 </svg>
                                 <p className="font-medium text-rose-900">Reembolsable con isapre y/o seguro médico.</p>
                             </div>
+                        </div>
+                        <div className="text-center mt-6 text-gray-700">
+                            <p className='font-bold text-2xl' >Consulta por nuestros programas, puedes tomar de 1, 5 o 10 sesiones.</p>
                         </div>
 
                         {/* CTA Button */}

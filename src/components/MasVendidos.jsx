@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 export default function MasVendidos() {
     return (
@@ -25,9 +26,11 @@ export default function MasVendidos() {
                             parto.
                         </p>
                         <div className="mt-6">
+                            <Link href="/sesiones-uno-a-uno/partoConsciente">
                             <button className="w-full rounded-lg bg-rose-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-rose-700">
                                 Más información
                             </button>
+                            </Link>
                         </div>
                     </div>
 
@@ -49,9 +52,11 @@ export default function MasVendidos() {
                             Aprende técnicas de movilidad pélvica y conoce tus derechos para un parto consciente y respetado.
                         </p>
                         <div className="mt-6">
-                            <button className="w-full rounded-lg bg-pink-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-pink-700">
-                                Más información
-                            </button>
+                            <Link href="/talleresYcursos/tallerDePreparacionAlParto">
+                                <button className="w-full rounded-lg bg-pink-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-pink-700">
+                                    Más información
+                                </button>
+                            </Link>
                         </div>
                     </div>
 
@@ -74,9 +79,11 @@ export default function MasVendidos() {
                             allá.
                         </p>
                         <div className="mt-6">
-                            <button className="w-full rounded-lg bg-purple-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-purple-700">
-                                Más información
-                            </button>
+                            <Link href="/raizCiclica">
+                                <button className="w-full rounded-lg bg-purple-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-purple-700">
+                                    Más información
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
