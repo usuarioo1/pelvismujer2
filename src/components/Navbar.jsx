@@ -14,14 +14,6 @@ const navItems = [
     ],
   },
   {
-    path: "/raizCiclica",
-    label: "Raíz Cíclica",
-    children: [
-      { path: "/raizCiclica/autoconocimientoFemenino", label: "Autoconocimiento Femenino" },
-      { path: "/raizCiclica/gestacionConsciente", label: "Gestación Consciente" },
-    ],
-  },
-  {
     path: "/sesiones-uno-a-uno",
     label: "Sesiones 1 a 1",
     children: [
