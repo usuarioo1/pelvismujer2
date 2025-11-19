@@ -1,10 +1,12 @@
 import MasVendidos from '@/components/MasVendidos'
 import React from 'react'
+import UnderConstruction from '@/components/UnderConstruction'
 
 const page = () => {
   return (
     <div>
-      <MasVendidos />
+      {/* <MasVendidos /> */}
+      <UnderConstruction />
     </div>
   )
 }
