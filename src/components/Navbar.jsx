@@ -1,6 +1,9 @@
 "use client"
 import Link from "next/link"
 import { useState } from "react"
+import Logonav2 from "../assets/logonav2.png"
+import Image from "next/image"
+
 
 const navItems = [
   { path: "/", label: "Inicio" },
@@ -62,15 +65,10 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-white shadow-md mt-2.5 shadow-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link
-            href="/"
-            className="text-lg font-light tracking-wider text-gray-900 hover:text-gray-700 transition-colors duration-300 flex-shrink-0"
-          >
-            PELVIS MUJER
-          </Link>
+          <Image src={Logonav2} alt="Logo Pelvis Mujer" width={100} height={70} />
 
           <ul className="hidden lg:flex gap-12 list-none m-0 p-0 items-center">
             {navItems.map((item) => (
@@ -154,6 +152,7 @@ export default function Navbar() {
           </div>
         )}
       </div>
+      <div className="border-b border-gray-100 mt-2"></div>
     </nav>
   )
 }

@@ -6,7 +6,7 @@ export default function TerminosYCondiciones() {
         <h2 className="text-lg text-purple-600 font-semibold mb-6 text-center">Membresía Raíz Cíclica: Gestantes</h2>
         <p className="text-sm text-gray-500 mb-8 text-center">Última actualización: 1 de Noviembre 2025</p>
         <p className="mb-6 text-gray-700 leading-relaxed">
-          La Membresía Raíz Cíclica – Gestantes es un espacio de acompañamiento integral en movimiento consciente, autoconocimiento corporal y bienestar emocional durante el embarazo, facilitado por <span className="font-semibold text-purple-700">[tu nombre completo o nombre profesional]</span>.
+          La Membresía Raíz Cíclica – Gestantes es un espacio de acompañamiento integral en movimiento consciente, autoconocimiento corporal y bienestar emocional durante el embarazo.
         </p>
         <p className="mb-8 text-gray-700 leading-relaxed">
           Al inscribirse en esta membresía, la usuaria declara haber leído, comprendido y aceptado los siguientes términos y condiciones:
