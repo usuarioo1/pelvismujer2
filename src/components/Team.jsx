@@ -55,17 +55,17 @@ const Team = () => {
     };
 
     return (
-        <div className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-orange-50">
+        <div className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-[#EDD0B2]/20">
             <div className="max-w-7xl mx-auto">
                 {/* Título principal */}
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    <h2 className="text-4xl md:text-5xl font-bold text-[#4E2226] mb-4 font-heading">
                         Nuestro Equipo
                     </h2>
-                    <h3 className="text-2xl md:text-3xl font-semibold text-orange-500 mb-6">
+                    <h3 className="text-2xl md:text-3xl font-semibold text-[#ED4137] mb-6">
                         Conoce a nuestras profesionales
                     </h3>
-                    <p className="text-gray-600 max-w-4xl mx-auto text-lg leading-relaxed">
+                    <p className="text-[#2D2D2D] max-w-4xl mx-auto text-lg leading-relaxed">
                         En PelvisMujer trabajamos unidas para acompañarte desde una mirada integral y consciente. 
                         Somos profesionales de la Kinesiología especializada en embarazo, post parto y piso pélvico, 
                         el yoga y la terapia Gestalt, dedicadas a guiarte en cada etapa de tu vida con respeto, 
@@ -90,7 +90,7 @@ const Team = () => {
                                 >
                                     {/* Imagen principal */}
                                     <div className="relative w-64 h-80 md:w-72 md:h-96 group">
-                                        <div className="absolute inset-0 bg-gradient-to-br from-orange-300 to-orange-500 rounded-[40px] transform rotate-6 group-hover:rotate-12 transition-transform duration-300"></div>
+                                        <div className="absolute inset-0 bg-gradient-to-br from-[#EDD0B2] to-[#ED4137] rounded-[40px] transform rotate-6 group-hover:rotate-12 transition-transform duration-300"></div>
                                         <div className="relative w-full h-full bg-gray-300 rounded-[40px] overflow-hidden shadow-2xl">
                                             <img 
                                                 src={member.image}
@@ -112,14 +112,14 @@ const Team = () => {
                     {/* Botones de navegación */}
                     <button
                         onClick={goToPrevious}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 z-10"
+                        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-[#2D2D2D] rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 z-10"
                         aria-label="Anterior"
                     >
                         <ChevronLeft className="w-6 h-6" />
                     </button>
                     <button
                         onClick={goToNext}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 z-10"
+                        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-[#2D2D2D] rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 z-10"
                         aria-label="Siguiente"
                     >
                         <ChevronRight className="w-6 h-6" />
@@ -127,10 +127,10 @@ const Team = () => {
 
                     {/* Información del miembro actual */}
                     <div className="mt-8 text-center">
-                        <h4 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+                        <h4 className="text-2xl md:text-3xl font-bold text-[#4E2226] mb-2 font-heading">
                             {teamMembers[currentIndex].name}
                         </h4>
-                        <p className="text-orange-500 font-medium text-lg">
+                        <p className="text-[#ED4137] font-medium text-lg">
                             {teamMembers[currentIndex].specialty}
                         </p>
                     </div>
@@ -143,8 +143,8 @@ const Team = () => {
                                 onClick={() => goToSlide(index)}
                                 className={`transition-all duration-300 rounded-full ${
                                     index === currentIndex 
-                                        ? 'bg-orange-500 w-8 h-3' 
-                                        : 'bg-gray-300 w-3 h-3 hover:bg-gray-400'
+                                        ? 'bg-[#ED4137] w-8 h-3' 
+                                        : 'bg-[#EDD0B2] w-3 h-3 hover:bg-[#EDD0B2]/60'
                                 }`}
                                 aria-label={`Ir a profesional ${index + 1}`}
                             />

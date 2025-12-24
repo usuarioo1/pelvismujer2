@@ -1,10 +1,10 @@
 export default function PuerperioCard() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50 p-4 md:p-8">
+    <div className="min-h-screen bg-gradient-to-br from-[#EDD0B2]/30 via-[#EDD0B2]/20 to-[#EDD0B2]/10 p-4 md:p-8">
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           {/* Header */}
-          <div className="bg-gradient-to-r from-rose-500 to-pink-500 p-8 text-white">
+          <div className="bg-gradient-to-r from-[#ED4137] to-[#E22727] p-8 text-white">
             <div className="flex items-center gap-4 mb-4">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -20,7 +20,7 @@ export default function PuerperioCard() {
                 <h1 className="text-3xl md:text-4xl font-bold leading-tight">
                   Programa personalizado: "Puerperio y re-conexión"
                 </h1>
-                <p className="text-rose-100 text-lg mt-2">
+                <p className="text-white/90 text-lg mt-2">
                   Kinesiología en el puerperio y rehabilitación de piso pélvico
                 </p>
               </div>
@@ -31,11 +31,11 @@ export default function PuerperioCard() {
           <div className="p-8 space-y-8">
             {/* Description */}
             <div>
-              <p className="text-gray-700 leading-relaxed text-lg">
+              <p className="text-[#2D2D2D] leading-relaxed text-lg">
                 En este servicio, cada sesión está diseñada para ayudarte a recuperar tu cuerpo con suavidad, liberar
                 tensiones, fortalecer y activar tu piso pélvico, dar espacio al proceso emocional que estás viviendo.
               </p>
-              <p className="text-gray-700 leading-relaxed text-lg mt-4">
+              <p className="text-[#2D2D2D] leading-relaxed text-lg mt-4">
                 Durante nuestras sesiones, nos enfocaremos en técnicas de Kinesiología específicas para mejorar la
                 movilidad, aliviar el dolor y restaurar la funcionalidad de tu cuerpo y piso pélvico tras el parto. A
                 través de ejercicios personalizados, aprenderás a escuchar y cuidar de ti misma, integrando prácticas de
@@ -48,7 +48,7 @@ export default function PuerperioCard() {
 
             {/* Services Included */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Este servicio incluye:</h2>
+              <h2 className="text-2xl font-bold text-[#4E2226] mb-4">Este servicio incluye:</h2>
               <div className="space-y-3">
                 {[
                   "Evaluación inicial personalizada para entender tus necesidades y objetivos.",
@@ -61,33 +61,33 @@ export default function PuerperioCard() {
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <svg
-                      className="w-6 h-6 text-rose-500 flex-shrink-0 mt-0.5"
+                      className="w-6 h-6 text-[#ED4137] flex-shrink-0 mt-0.5"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-gray-700 leading-relaxed">{item}</span>
+                    <span className="text-[#2D2D2D] leading-relaxed">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* For You Section */}
-            <div className="bg-rose-50 rounded-xl p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Este espacio es para ti si:</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="bg-[#EDD0B2]/30 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-[#4E2226] mb-3">Este espacio es para ti si:</h3>
+              <p className="text-[#2D2D2D] leading-relaxed">
                 Quieres re-conectar con tu cuerpo físico, energético y espiritual, ya que exploraremos el funcionamiento
                 de este nuevo cuerpo.
               </p>
             </div>
 
             {/* Additional Info */}
-            <div className="bg-pink-50 rounded-xl p-6 space-y-3">
+            <div className="bg-[#EDD0B2]/20 rounded-xl p-6 space-y-3">
               <div className="flex items-start gap-3">
                 <svg
-                  className="w-6 h-6 text-pink-600 flex-shrink-0 mt-0.5"
+                  className="w-6 h-6 text-[#ED4137] flex-shrink-0 mt-0.5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -99,13 +99,13 @@ export default function PuerperioCard() {
                     d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-[#2D2D2D] leading-relaxed">
                   <span className="font-semibold">Reembolsable</span> con isapre y/o seguro médico.
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <svg
-                  className="w-6 h-6 text-pink-600 flex-shrink-0 mt-0.5"
+                  className="w-6 h-6 text-[#ED4137] flex-shrink-0 mt-0.5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -117,7 +117,7 @@ export default function PuerperioCard() {
                     d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
                   />
                 </svg>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-[#2D2D2D] leading-relaxed">
                   Consulta por nuestros programas, puedes tomar de{" "}
                   <span className="font-semibold">1, 5 o 10 sesiones</span>.
                 </p>
@@ -125,7 +125,7 @@ export default function PuerperioCard() {
             </div>
 
             {/* CTA Button */}
-            <button className="w-full bg-gradient-to-r from-rose-500 to-pink-500 text-white py-4 px-8 rounded-xl font-semibold text-lg hover:from-rose-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <button className="w-full bg-gradient-to-r from-[#ED4137] to-[#E22727] text-white py-4 px-8 rounded-xl font-semibold text-lg hover:from-[#E22727] hover:to-[#E22727] transition-all duration-300 shadow-lg hover:shadow-xl">
               Agendar Sesión
             </button>
           </div>

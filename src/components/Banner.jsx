@@ -41,26 +41,28 @@ export function HeroBanner() {
                     <div className="grid grid-cols-1 gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16">
                         {/* Left side - Text content */}
                         <div className="flex flex-col justify-center space-y-4 sm:space-y-5 lg:space-y-6 max-w-xl">
-                            <p className="text-xs uppercase tracking-[0.2em] text-white/90 sm:text-sm font-light">
-                                ESPACIO DE BIENESTAR
-                            </p>
-
-                            <h1 className="text-4xl font-normal leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-                                Bienvenida<br />a Brella
+                            <h1 className="text-4xl font-normal leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl font-heading">
+                                Bienvenida a<br />PelvisMujer
                             </h1>
 
                             <div className="space-y-3 text-white/90 sm:space-y-4 max-w-lg">
+                                <p className="text-base leading-relaxed sm:text-lg md:text-xl font-light">
+                                    Un espacio para volver a tu cuerpo, a tu centro y a tu poder.
+                                </p>
                                 <p className="text-sm leading-relaxed sm:text-base md:text-lg font-light">
-                                    Tu espacio para encontrar el equilibrio entre cuerpo y mente. Únete a nuestra comunidad y descubre el bienestar a través de clases de Pilates y Yoga, diseñadas especialmente para ti y guiadas por instructoras expertas.
+                                    Acompañamos a mujeres en todas sus etapas ciclicidad, gestación, parto y posparto desde la Kinesiología de piso pélvico, el yoga, la terapia Gestalt y la neurociencia.
+                                </p>
+                                <p className="text-sm leading-relaxed sm:text-base md:text-lg font-light italic">
+                                    Aquí comienzas un viaje de autoconocimiento, sensibilidad y presencia. Tu cuerpo es tu casa.
                                 </p>
                             </div>
 
                             <div className="pt-2 sm:pt-4">
                                 <Link
-                                    href="/planes-clases"
-                                    className="inline-block rounded-md border-2 border-white/80 px-6 py-2.5 text-xs font-normal uppercase tracking-wider text-white transition-all hover:bg-white hover:text-black sm:px-8 sm:py-3 sm:text-sm backdrop-blur-sm"
+                                    href="/conocenos"
+                                    className="inline-block rounded-md border-2 border-[#ED4137] bg-[#ED4137] px-6 py-2.5 text-xs font-normal uppercase tracking-wider text-white transition-all hover:bg-[#E22727] hover:border-[#E22727] sm:px-8 sm:py-3 sm:text-sm backdrop-blur-sm"
                                 >
-                                    Planes de Clases
+                                    Conoce más
                                 </Link>
                             </div>
                         </div>
@@ -103,23 +105,23 @@ export function HeroBanner() {
                                 <div className="flex gap-3">
                                     <button
                                         onClick={prevSlide}
-                                        className="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 text-white transition-all hover:border-white hover:bg-white/10 active:scale-95 sm:h-12 sm:w-12 backdrop-blur-sm"
+                                        className="flex h-10 w-10 items-center justify-center rounded-full border border-[#EDD0B2] text-white transition-all hover:border-[#ED4137] hover:bg-[#ED4137]/20 active:scale-95 sm:h-12 sm:w-12 backdrop-blur-sm"
                                         aria-label="Anterior"
                                     >
                                         <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5" />
                                     </button>
                                     <button
                                         onClick={nextSlide}
-                                        className="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 text-white transition-all hover:border-white hover:bg-white/10 active:scale-95 sm:h-12 sm:w-12 backdrop-blur-sm"
+                                        className="flex h-10 w-10 items-center justify-center rounded-full border border-[#EDD0B2] text-white transition-all hover:border-[#ED4137] hover:bg-[#ED4137]/20 active:scale-95 sm:h-12 sm:w-12 backdrop-blur-sm"
                                         aria-label="Siguiente"
                                     >
                                         <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />
                                     </button>
                                 </div>
                                 
-                                <div className="h-[1px] flex-1 bg-white/20 max-w-[200px]" />
+                                <div className="h-[1px] flex-1 bg-[#EDD0B2]/40 max-w-[200px]" />
                                 
-                                <div className="text-5xl font-light text-white/50 sm:text-6xl tabular-nums">
+                                <div className="text-5xl font-light text-[#EDD0B2]/60 sm:text-6xl tabular-nums">
                                     0{currentSlide + 1}
                                 </div>
                             </div>

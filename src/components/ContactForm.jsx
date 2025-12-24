@@ -65,10 +65,10 @@ export default function ContactForm() {
 
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-sm">
-      <h2 className="text-2xl font-semibold text-purple-800 mb-6">Contáctanos</h2>
+      <h2 className="text-2xl font-semibold text-[#4E2226] mb-6">Contáctanos</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="nombre" className="block text-sm font-medium text-[#2D2D2D] mb-1">
             Nombre completo
           </label>
           <input
@@ -78,13 +78,13 @@ export default function ContactForm() {
             value={formData.nombre}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#ED4137] focus:border-transparent"
             placeholder="Tu nombre"
           />
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="email" className="block text-sm font-medium text-[#2D2D2D] mb-1">
             Correo electrónico
           </label>
           <input
@@ -94,13 +94,13 @@ export default function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#ED4137] focus:border-transparent"
             placeholder="tu@email.com"
           />
         </div>
 
         <div>
-          <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="telefono" className="block text-sm font-medium text-[#2D2D2D] mb-1">
             Teléfono
           </label>
           <input
@@ -110,13 +110,13 @@ export default function ContactForm() {
             value={formData.telefono}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#ED4137] focus:border-transparent"
             placeholder="+34 XXX XXX XXX"
           />
         </div>
 
         <div>
-          <label htmlFor="programa" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="programa" className="block text-sm font-medium text-[#2D2D2D] mb-1">
             Programa de interés
           </label>
           <select
@@ -125,7 +125,7 @@ export default function ContactForm() {
             value={formData.programa}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 text-black rounded-md focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            className="w-full px-4 py-2 border border-gray-300 text-black rounded-md focus:ring-2 focus:ring-[#ED4137] focus:border-transparent"
           >
             <option value="">Selecciona un programa</option>
             {programOptions.map((category) => (
@@ -142,7 +142,7 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          className="w-full bg-purple-600 text-white py-3 px-6 rounded-md hover:bg-purple-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+          className="w-full bg-[#ED4137] text-white py-3 px-6 rounded-md hover:bg-[#E22727] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#ED4137] focus:ring-offset-2"
         >
           Enviar mensaje
         </button>

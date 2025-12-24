@@ -1,10 +1,10 @@
 export default function ReconexionCard() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50 p-8">
+        <div className="min-h-screen bg-gradient-to-br from-[#EDD0B2]/30 via-[#EDD0B2]/20 to-[#EDD0B2]/10 p-8">
             <div className="max-w-4xl mx-auto">
                 <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
                     {/* Header con gradiente */}
-                    <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-8 text-white">
+                    <div className="bg-gradient-to-r from-[#4E2226] to-[#ED4137] p-8 text-white">
                         <div className="flex items-center gap-4 mb-4">
                             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -29,12 +29,12 @@ export default function ReconexionCard() {
                     <div className="p-8 space-y-8">
                         {/* Sección: Incluye */}
                         <div>
-                            <h2 className="text-2xl font-bold text-gray-800 mb-6">Incluye:</h2>
+                            <h2 className="text-2xl font-bold text-[#4E2226] mb-6">Incluye:</h2>
                             <div className="space-y-6">
                                 {/* Clase de Hatha Yoga */}
                                 <div className="flex gap-4">
                                     <div className="flex-shrink-0">
-                                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#4E2226] to-[#ED4137] flex items-center justify-center">
                                             <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                                                 <path
                                                     fillRule="evenodd"
@@ -45,11 +45,11 @@ export default function ReconexionCard() {
                                         </div>
                                     </div>
                                     <div className="flex-1">
-                                        <p className="text-gray-700 leading-relaxed">
+                                        <p className="text-[#2D2D2D] leading-relaxed">
                                             <span className="text-2xl mr-2">🧘‍♀️</span>
                                             <strong>1 clase online sincrónica de Hatha Yoga a la semana</strong>
                                         </p>
-                                        <div className="mt-2 inline-block bg-purple-50 text-purple-700 px-4 py-2 rounded-lg font-medium">
+                                        <div className="mt-2 inline-block bg-[#EDD0B2]/30 text-[#4E2226] px-4 py-2 rounded-lg font-medium">
                                             Lunes 21:00 a 22:00 hrs
                                         </div>
                                     </div>
@@ -58,7 +58,7 @@ export default function ReconexionCard() {
                                 {/* Clases grabadas de core */}
                                 <div className="flex gap-4">
                                     <div className="flex-shrink-0">
-                                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center">
+                                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#ED4137] to-[#E22727] flex items-center justify-center">
                                             <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                                                 <path
                                                     fillRule="evenodd"
@@ -69,7 +69,7 @@ export default function ReconexionCard() {
                                         </div>
                                     </div>
                                     <div className="flex-1">
-                                        <p className="text-gray-700 leading-relaxed">
+                                        <p className="text-[#2D2D2D] leading-relaxed">
                                             <span className="text-2xl mr-2">🎥</span>
                                             <strong>3 clases grabadas de core e hipopresivos</strong>, para rehabilitación y activación de
                                             faja abdominal
@@ -80,7 +80,7 @@ export default function ReconexionCard() {
                                 {/* Clase de voz y piso pélvico */}
                                 <div className="flex gap-4">
                                     <div className="flex-shrink-0">
-                                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-rose-500 to-pink-500 flex items-center justify-center">
+                                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#ED4137] to-[#ED4137] flex items-center justify-center">
                                             <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                                                 <path
                                                     fillRule="evenodd"
@@ -91,7 +91,7 @@ export default function ReconexionCard() {
                                         </div>
                                     </div>
                                     <div className="flex-1">
-                                        <p className="text-gray-700 leading-relaxed">
+                                        <p className="text-[#2D2D2D] leading-relaxed">
                                             <span className="text-2xl mr-2">🎶</span>
                                             <strong>1 clase sincrónica mensual de uso de la voz</strong> más activación y autoconocimiento de
                                             piso pélvico.
@@ -102,7 +102,7 @@ export default function ReconexionCard() {
                                 {/* Espacios de exploración */}
                                 <div className="flex gap-4">
                                     <div className="flex-shrink-0">
-                                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-rose-500 flex items-center justify-center">
+                                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#4E2226] to-[#ED4137] flex items-center justify-center">
                                             <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                                                 <path
                                                     fillRule="evenodd"
@@ -113,7 +113,7 @@ export default function ReconexionCard() {
                                         </div>
                                     </div>
                                     <div className="flex-1">
-                                        <p className="text-gray-700 leading-relaxed">
+                                        <p className="text-[#2D2D2D] leading-relaxed">
                                             <span className="text-2xl mr-2">🌿</span>
                                             <strong>Espacios de exploración y autoconocimiento</strong> desde la Gestalt y la conciencia
                                             corporal.
@@ -124,15 +124,15 @@ export default function ReconexionCard() {
                         </div>
 
                         {/* Información adicional */}
-                        <div className="bg-purple-50 rounded-xl p-6 border-l-4 border-purple-500">
-                            <p className="text-gray-700 leading-relaxed">
+                        <div className="bg-[#EDD0B2]/30 rounded-xl p-6 border-l-4 border-[#ED4137]">
+                            <p className="text-[#2D2D2D] leading-relaxed">
                                 <strong>Todas nuestras clases quedan grabadas</strong> y puedes acceder a ellas durante 3 meses.
                             </p>
                         </div>
 
                         {/* Botón CTA */}
                         <div className="pt-4">
-                            <button className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-4 px-8 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+                            <button className="w-full bg-gradient-to-r from-[#ED4137] to-[#E22727] text-white font-semibold py-4 px-8 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
                                 Unirme al programa
                             </button>
                         </div>

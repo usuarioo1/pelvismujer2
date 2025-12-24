@@ -38,3 +38,34 @@ HEX: #2D2D2D
 RGB: rgb(45,45,45)
 
 CMYK: cmyk(0,0,0,82)
+
+---
+
+## 🔤 Tipografías
+
+### 1° Quentin*
+
+```
+a b c d e f g h i j k l m n ñ o p q r s t u v w x y z
+A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z
+0 1 2 3 4 5 6 7 8 9
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
+```
+
+### 2° Montserrat
+
+```
+a b c d e f g h i j k l m n ñ o p q r s t u v w x y z
+A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z
+0 1 2 3 4 5 6 7 8 9
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
+```
+
+### 3° Awelier
+
+```
+a b c d e f g h i j k l m n ñ o p q r s t u v w x y z
+A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z
+0 1 2 3 4 5 6 7 8 9
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
+```

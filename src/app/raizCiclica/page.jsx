@@ -1,10 +1,10 @@
 export default function RaizCiclicaCard() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-rose-50 p-8">
+        <div className="min-h-screen bg-gradient-to-br from-[#EDD0B2]/30 via-white to-[#EDD0B2]/20 p-8">
             <div className="max-w-4xl mx-auto">
                 <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
                     {/* Header con gradiente */}
-                    <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-8 text-white">
+                    <div className="bg-gradient-to-r from-[#4E2226] to-[#ED4137] p-8 text-white">
                         <div className="flex items-center gap-4 mb-4">
                             <div className="bg-white/20 backdrop-blur-sm p-4 rounded-2xl">
                                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -17,7 +17,7 @@ export default function RaizCiclicaCard() {
                                 </svg>
                             </div>
                             <div>
-                                <h1 className="text-3xl font-bold text-balance">Raíz Cíclica</h1>
+                                <h1 className="text-3xl font-bold text-balance font-heading">Raíz Cíclica</h1>
                                 <p className="text-white/90 text-lg mt-1">Espacio online de autocuidado</p>
                             </div>
                         </div>
@@ -46,9 +46,9 @@ export default function RaizCiclicaCard() {
                         </div>
 
                         {/* Propósito */}
-                        <div className="bg-purple-50 rounded-2xl p-6">
-                            <h3 className="text-xl font-semibold text-purple-900 mb-3">Nuestro Propósito</h3>
-                            <p className="text-gray-700 leading-relaxed">
+                        <div className="bg-[#EDD0B2]/30 rounded-2xl p-6">
+                            <h3 className="text-xl font-semibold text-[#4E2226] mb-3">Nuestro Propósito</h3>
+                            <p className="text-[#2D2D2D] leading-relaxed">
                                 Acompañarte en tu viaje, ya sea en la gestación, el postparto, la menstruación o el climaterio, para que
                                 puedas volver a tu raíz, escuchar tu ritmo interno y nutrir tu bienestar con herramientas prácticas y
                                 experiencias transformadoras.
@@ -56,22 +56,22 @@ export default function RaizCiclicaCard() {
                         </div>
 
                         {/* Mensaje especial */}
-                        <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-6 border-2 border-pink-200">
-                            <p className="text-gray-700 leading-relaxed mb-4">
+                        <div className="bg-gradient-to-r from-[#EDD0B2]/50 to-[#EDD0B2]/30 rounded-2xl p-6 border-2 border-[#ED4137]/30">
+                            <p className="text-[#2D2D2D] leading-relaxed mb-4">
                                 Este no es solo un espacio de clases: es un círculo de cuidado y pertenencia, donde cada mujer puede
                                 reconectar con su fuerza, su calma y su poder cíclico.
                             </p>
-                            <p className="text-purple-700 font-medium text-lg text-balance">
+                            <p className="text-[#ED4137] font-medium text-lg text-balance">
                                 🌙 Bienvenida a Raíz Cíclica: tu espacio para respirar, explorar y florecer en cada ciclo.
                             </p>
                         </div>
 
                         {/* Programas disponibles */}
                         <div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-6">Programas en el espacio online</h3>
+                            <h3 className="text-2xl font-bold text-[#4E2226] mb-6">Programas en el espacio online</h3>
                             <div className="grid gap-4">
-                                <div className="flex items-start gap-3 p-4 bg-rose-50 rounded-xl hover:bg-rose-100 transition-colors">
-                                    <svg className="w-6 h-6 text-rose-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                <div className="flex items-start gap-3 p-4 bg-[#EDD0B2]/30 rounded-xl hover:bg-[#EDD0B2]/50 transition-colors">
+                                    <svg className="w-6 h-6 text-[#ED4137] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                                         <path
                                             fillRule="evenodd"
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -79,13 +79,13 @@ export default function RaizCiclicaCard() {
                                         />
                                     </svg>
                                     <div>
-                                        <h4 className="font-semibold text-gray-900">Programa para gestantes</h4>
-                                        <p className="text-gray-600 text-sm">Gestación consciente</p>
+                                        <h4 className="font-semibold text-[#4E2226]">Programa para gestantes</h4>
+                                        <p className="text-[#2D2D2D] text-sm">Gestación consciente</p>
                                     </div>
                                 </div>
 
-                                <div className="flex items-start gap-3 p-4 bg-pink-50 rounded-xl hover:bg-pink-100 transition-colors">
-                                    <svg className="w-6 h-6 text-pink-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                <div className="flex items-start gap-3 p-4 bg-[#ED4137]/10 rounded-xl hover:bg-[#ED4137]/20 transition-colors">
+                                    <svg className="w-6 h-6 text-[#ED4137] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                                         <path
                                             fillRule="evenodd"
                                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -93,11 +93,11 @@ export default function RaizCiclicaCard() {
                                         />
                                     </svg>
                                     <div>
-                                        <h4 className="font-semibold text-gray-900">Re-conexión y autoconocimiento femenino</h4>
+                                        <h4 className="font-semibold text-[#4E2226]">Re-conexión y autoconocimiento femenino</h4>
                                     </div>
                                 </div>
 
-                                <div className="flex items-start gap-3 p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
+                                <div className="flex items-start gap-3 p-4 bg-[#4E2226]/10 rounded-xl hover:bg-[#4E2226]/20 transition-colors">
                                     <svg className="w-6 h-6 text-purple-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                                         <path
                                             fillRule="evenodd"

@@ -6,7 +6,7 @@ export default function Concepto() {
             {/* Imagen decorativa */}
             <div className="relative flex-shrink-0 flex items-center justify-center w-full max-w-md md:max-w-lg lg:max-w-xl">
                 {/* Fondo decorativo con border-radius personalizado */}
-                <div className="absolute inset-0 rounded-[40%_40%_0_0/50%_50%_0_0] bg-[#FBE9DD] -z-10 w-full h-full" />
+                <div className="absolute inset-0 rounded-[40%_40%_0_0/50%_50%_0_0] bg-[#EDD0B2] -z-10 w-full h-full" />
                 <Image
                     src="/pregnant-woman-meditating-peacefully.jpg"
                     alt="Mujer meditando"
@@ -28,7 +28,7 @@ export default function Concepto() {
                 <div className="absolute right-[-40px] top-1/3">
                     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g>
-                            <circle cx="40" cy="40" r="16" fill="#FAD7B6" />
+                            <circle cx="40" cy="40" r="16" fill="#ED4137" />
                             {[...Array(8)].map((_, i) => (
                                 <ellipse
                                     key={i}
@@ -36,7 +36,7 @@ export default function Concepto() {
                                     cy={40 + 28 * Math.sin((i * Math.PI) / 4)}
                                     rx="10"
                                     ry="20"
-                                    fill="#FAD7B6"
+                                    fill="#EDD0B2"
                                     transform={`rotate(${i * 45} 40 40)`}
                                 />
                             ))}
@@ -46,8 +46,8 @@ export default function Concepto() {
             </div>
             {/* Texto */}
             <div className="max-w-md w-full flex flex-col justify-center md:pl-2 lg:pl-6 space-y-2">
-                <h2 className="text-2xl md:text-3xl font-semibold text-[#D48B7A] mb-3">Habitar tu cuerpo es volver a casa</h2>
-                <p className="text-sm md:text-base text-gray-700 mb-2 leading-tight">
+                <h2 className="text-2xl md:text-3xl font-semibold text-[#ED4137] mb-3 font-heading">Habitar tu cuerpo es volver a casa</h2>
+                <p className="text-sm md:text-base text-[#2D2D2D] mb-2 leading-tight">
                     ¡Hola! Soy Daniela, fundadora de PelvisMujer. Este espacio nació de mi propia transformación ✨<br /><br />
                     Durante años busqué respuestas en mis ciclos, mis dolores y mis emociones. Esa intuición suave que insistía en que “había algo más” me llevó a atravesar una crisis que terminó siendo un portal. Fue allí donde decidí cambiar mi forma de acompañar: integrar Kinesiología de piso pélvico, yoga, meditación, terapia Gestalt y la comprensión profunda de que el cuerpo no solo se rehabilita… se habita, se honra y se despierta.<br /><br />
                     Así nació PelvisMujer: un lugar donde cada mujer puede encontrarse consigo misma desde lo físico, lo emocional y lo energético. Un espacio seguro donde tu pelvis tu raíz, tu centro, tu hogar interno se convierte en guía para sanar, transformar y reconectar con tu poder.<br /><br />
