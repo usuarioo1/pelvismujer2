@@ -1,12 +1,19 @@
 import MasVendidos from '@/components/MasVendidos'
 import React from 'react'
-import UnderConstruction from '@/components/UnderConstruction'
+import Concepto from '@/components/Concepto'
+import Team from '@/components/Team'
+import { HeroBanner } from '@/components/Banner'
+import Caracteristicas from '@/components/Caracteristicas'
 
 const page = () => {
   return (
     <div>
-      {/* <MasVendidos /> */}
-      <UnderConstruction />
+      <HeroBanner />
+      <Concepto />
+      <Caracteristicas />
+      <MasVendidos />
+      <Team />
+      {/* <UnderConstruction /> */}
     </div>
   )
 }

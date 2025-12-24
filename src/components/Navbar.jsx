@@ -10,7 +10,7 @@ const navItems = [
   { path: "/conocenos", label: "Conócenos" },
   {
     path: "/espacioOnline",
-    label: "Espacio Online",
+    label: "Membresía Raíz Cíclica",
     children: [
       { path: "/espacioOnline/autoConocimientoFemenino", label: "AutoConocimiento Femenino" },
       { path: "/espacioOnline/programaParaGestantes", label: "Programa para Gestantes" },
