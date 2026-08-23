@@ -29,10 +29,19 @@ export default function Caracteristicas() {
                                 ))}
                             </g>
                         </svg>
-                        <span className="text-lg font-medium text-[#4E2226] font-decorative">¿Por qué elegir PelvisMujer?</span>
+                        <span className="text-4xl font-medium text-[#4E2226] font-decorative">¿Por qué elegir PelvisMujer?</span>
                     </div>
                     <p className="text-base text-[#2D2D2D] mb-2">
-                        Porque aquí el cuerpo no se trata como una máquina que reparar, sino como una historia que escuchar. En PelvisMujer integramos Kinesiología de piso pélvico, yoga tradicional, terapia Gestalt y neurociencia para acompañarte de forma consciente, respetuosa y profunda en cada etapa de tu vida. Este es un espacio seguro donde puedes habitarte, comprenderte y transformarte desde la raíz: tu pelvis, tu centro y tu hogar interno.
+                       Acá no tratamos cuerpos como máquinas. Escuchamos historias.
+
+No buscamos corregirte ni decirte cómo debería funcionar tu cuerpo. Acompañamos tu proceso de rehabilitación desde la escucha, el movimiento y la conciencia corporal.
+
+No intervenimos desde afuera. Te invitamos a volver a tu centro, a comprender lo que ocurre en tu cuerpo y a recuperar la confianza en él.
+
+Porque rehabilitar no es simplemente corregir una función.
+Es volver a sentirte, reconocerte y habitarte.
+
+PelvisMujer es un espacio para habitar tu cuerpo.
                     </p>
                     <div className="flex gap-4 mt-2">
                         <a href="/membresiaRaizCiclica" className="px-5 py-2 rounded-md border-2 border-[#4E2226] text-[#4E2226] font-medium bg-white hover:bg-[#EDD0B2]/30 transition">Ir a Membresía - Raíz cíclica</a>

@@ -48,11 +48,13 @@ export default function Concepto() {
             <div className="max-w-md w-full flex flex-col justify-center md:pl-2 lg:pl-6 space-y-2">
                 <h2 className="text-2xl md:text-3xl font-semibold text-[#ED4137] mb-3 font-heading">Habitar tu cuerpo es volver a casa</h2>
                 <p className="text-sm md:text-base text-[#2D2D2D] mb-2 leading-tight">
-                    ¡Hola! Soy Daniela, fundadora de PelvisMujer. Este espacio nació de mi propia transformación ✨<br /><br />
-                    Durante años busqué respuestas en mis ciclos, mis dolores y mis emociones. Esa intuición suave que insistía en que “había algo más” me llevó a atravesar una crisis que terminó siendo un portal. Fue allí donde decidí cambiar mi forma de acompañar: integrar Kinesiología de piso pélvico, yoga, meditación, terapia Gestalt y la comprensión profunda de que el cuerpo no solo se rehabilita… se habita, se honra y se despierta.<br /><br />
-                    Así nació PelvisMujer: un lugar donde cada mujer puede encontrarse consigo misma desde lo físico, lo emocional y lo energético. Un espacio seguro donde tu pelvis tu raíz, tu centro, tu hogar interno se convierte en guía para sanar, transformar y reconectar con tu poder.<br /><br />
-                    Creo profundamente que el movimiento consciente y el trabajo corporal pueden cambiar la vida. Cuando una mujer se escucha, se siente y se permite habitar su historia con amor, todo empieza a ordenarse adentro.<br /><br />
-                    Aquí te acompaño a transitar tus ciclos y etapas, ciclicidad, gestación, parto, posparto y climaterio un espacio para que recuerdes tu fuerza, tu sensibilidad y tu verdad.
+                    Soy Daniela Flores, Kinesióloga y fundadora de PelvisMujer.<br /><br />
+                    Este espacio nace de una certeza: el cuerpo guarda una sabiduría que muchas veces olvidamos escuchar.<br /><br />
+                    Mi camino comenzó en la búsqueda, en mis ciclos, mis dolores y mis emociones, hasta que una crisis abrió un portal. Ahí entendí que acompañar no es solo tratar, es sostener procesos profundos de reconexión.<br /><br />
+                    Así nace PelvisMujer: una integración viva de Kinesiología de piso pélvico, yoga, meditación, terapia Gestalt y conciencia corporal. Un espacio donde el cuerpo deja de ser algo que corregir y se transforma en un territorio que habitar, honrar y despertar.<br /><br />
+                    Aquí, tu pelvis no es solo anatomía: es raíz, centro y guía.<br />
+                    Es el lugar desde donde puedes sanar, ordenar y reconectar con tu poder.<br /><br />
+                    Acompaño a mujeres en cada etapa: ciclicidad, gestación, parto, posparto y climaterio, a volver a sí mismas, con presencia, sensibilidad y verdad.
                 </p>
             </div>
         </section>

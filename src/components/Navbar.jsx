@@ -7,33 +7,11 @@ import Image from "next/image"
 
 const navItems = [
   { path: "/", label: "Inicio" },
-  { path: "/conocenos", label: "Conócenos" },
-  {
-    path: "/espacioOnline",
-    label: "Membresía Raíz Cíclica",
-    children: [
-      { path: "/espacioOnline/autoConocimientoFemenino", label: "AutoConocimiento Femenino" },
-      { path: "/espacioOnline/programaParaGestantes", label: "Programa para Gestantes" },
-    ],
-  },
-  {
-    path: "/sesiones-uno-a-uno",
-    label: "Sesiones 1 a 1",
-    children: [
-      { path: "/sesiones-uno-a-uno/dolorPelvico", label: "Dolor Pélvico" },
-      { path: "/sesiones-uno-a-uno/partoConsciente", label: "Parto Consciente" },
-      { path: "/sesiones-uno-a-uno/puerperio", label: "Puerperio" },
-    ],
-  },
-  {
-    path: "/talleresYcursos",
-    label: "Talleres y Cursos",
-    children: [
-      { path: "/talleresYcursos/tallerDePreparacionAlParto", label: "Taller de Preparación al Parto" },
-      { path: "/talleresYcursos/tallerInstinto", label: "Taller Instinto" },
-      { path: "/talleresYcursos/tallerRCP", label: "Taller RCP" },
-    ],
-  },
+  { path: "/conocenos", label: "Sobre Pelvis Mujer" },
+  { path: "/membresia", label: "Membresía" },
+  { path: "/kinesiologia", label: "Kinesiologia" },
+  { path: "/talleresYcursos", label: "Talleres y Encuentros" },
+  { path: "/contacto", label: "Contacto" },
 ]
 
 function Dropdown({ label, children }) {

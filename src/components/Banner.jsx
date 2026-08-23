@@ -47,24 +47,18 @@ export function HeroBanner() {
 
                             <div className="space-y-3 text-white/90 sm:space-y-4 max-w-lg">
                                 <p className="text-base leading-relaxed sm:text-lg md:text-xl font-light">
-                                    Un espacio para volver a tu cuerpo, a tu centro y a tu poder.
+                                    Un espacio para reconectar con tu cuerpo, tu centro y tu poder.
                                 </p>
                                 <p className="text-sm leading-relaxed sm:text-base md:text-lg font-light">
-                                    Acompañamos a mujeres en todas sus etapas ciclicidad, gestación, parto y posparto desde la Kinesiología de piso pélvico, el yoga, la terapia Gestalt y la neurociencia.
+                                    Acompañamos a mujeres en cada etapa de su ciclo vital, ciclicidad, gestación, parto y posparto, integrando Kinesiología de piso pélvico, yoga, terapia Gestalt y neurociencia.
                                 </p>
                                 <p className="text-sm leading-relaxed sm:text-base md:text-lg font-light italic">
-                                    Aquí comienzas un viaje de autoconocimiento, sensibilidad y presencia. Tu cuerpo es tu casa.
+                                    Aquí comienza un viaje de autoconocimiento, sensibilidad y presencia.
+Tu cuerpo es tu hogar.
                                 </p>
                             </div>
 
-                            <div className="pt-2 sm:pt-4">
-                                <Link
-                                    href="/conocenos"
-                                    className="inline-block rounded-md border-2 border-[#ED4137] bg-[#ED4137] px-6 py-2.5 text-xs font-normal uppercase tracking-wider text-white transition-all hover:bg-[#E22727] hover:border-[#E22727] sm:px-8 sm:py-3 sm:text-sm backdrop-blur-sm"
-                                >
-                                    Conoce más
-                                </Link>
-                            </div>
+                            
                         </div>
 
                         {/* Right side - Cards carousel */}
