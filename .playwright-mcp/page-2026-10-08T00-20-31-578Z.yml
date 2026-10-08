@@ -1,0 +1,45 @@
+- generic [active] [ref=f1e1]:
+  - navigation [ref=f1e2]:
+    - generic [ref=f1e4]:
+      - img "Logo Pelvis Mujer" [ref=f1e5]
+      - button "Toggle menu" [ref=f1e6]
+  - main [ref=f1e10]:
+    - generic [ref=f1e12]:
+      - generic [ref=f1e13]: Error 404
+      - heading "404" [level=1] [ref=f1e14]
+      - heading "Esta página no existe o no está disponible" [level=2] [ref=f1e15]
+      - link "Volver al inicio" [ref=f1e17] [cursor=pointer]:
+        - /url: /
+  - contentinfo [ref=f1e18]:
+    - generic [ref=f1e20]:
+      - generic [ref=f1e21]:
+        - heading "PelvisMujer" [level=3] [ref=f1e22]
+        - paragraph [ref=f1e23]: Un viaje de autoconocimiento integral para la mujer
+      - generic [ref=f1e24]:
+        - heading "Navegación" [level=4] [ref=f1e25]
+        - list [ref=f1e26]:
+          - listitem [ref=f1e27]:
+            - link "Inicio" [ref=f1e28] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f1e29]:
+            - link "Quiénes Somos" [ref=f1e30] [cursor=pointer]:
+              - /url: /quienes-somos
+          - listitem [ref=f1e31]:
+            - link "Términos y Condiciones" [ref=f1e32] [cursor=pointer]:
+              - /url: /terminos-condiciones
+      - generic [ref=f1e33]:
+        - heading "Únete a nuestra comunidad" [level=4] [ref=f1e34]
+        - generic [ref=f1e35]:
+          - link "Facebook" [ref=f1e36] [cursor=pointer]:
+            - /url: https://facebook.com
+          - link "Instagram" [ref=f1e39] [cursor=pointer]:
+            - /url: https://instagram.com
+          - link "YouTube" [ref=f1e42] [cursor=pointer]:
+            - /url: https://youtube.com
+      - generic [ref=f1e45]:
+        - heading "Métodos de Pago" [level=4] [ref=f1e46]
+        - generic [ref=f1e47]:
+          - img [ref=f1e48]:
+            - generic [ref=f1e50]: MP
+          - generic [ref=f1e51]: Mercado Pago
+    - paragraph [ref=f1e54]: © 2026 PelvisMujer. Todos los derechos reservados.

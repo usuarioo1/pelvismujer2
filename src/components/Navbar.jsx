@@ -1,136 +1,110 @@
 "use client"
 import Link from "next/link"
-import { useState } from "react"
+import { usePathname } from "next/navigation"
+import { useEffect, useState } from "react"
 import Logonav2 from "../assets/logonav2.png"
 import Image from "next/image"
 
-
 const navItems = [
   { path: "/", label: "Inicio" },
-  { path: "/conocenos", label: "Sobre Pelvis Mujer" },
+  { path: "/conocenos", label: "Sobre PelvisMujer" },
+  { path: "/espacioOnline", label: "Espacio Online" },
   { path: "/membresia", label: "Membresía" },
-  { path: "/kinesiologia", label: "Kinesiologia" },
+  { path: "/sesiones-uno-a-uno", label: "Sesiones 1:1" },
   { path: "/talleresYcursos", label: "Talleres y Encuentros" },
-  { path: "/contacto", label: "Contacto" },
 ]
-
-function Dropdown({ label, children }) {
-  const [open, setOpen] = useState(false)
-  return (
-    <div className="relative group" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
-      <button className="text-[#2D2D2D] font-light text-sm py-2 px-1 border-b-2 border-transparent hover:text-[#4E2226] hover:border-[#ED4137] transition-all duration-300 flex items-center gap-2">
-        {label}
-        <svg
-          className={`w-3 h-3 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-      {open && (
-        <ul className="absolute left-0 mt-0 w-52 bg-white shadow-xl rounded-lg py-4 z-50 border border-[#EDD0B2]">
-          {children}
-        </ul>
-      )}
-    </div>
-  )
-}
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
+  const pathname = usePathname()
+
+  useEffect(() => {
+    setMobileOpen(false)
+  }, [pathname])
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-md mt-2.5 shadow-[#EDD0B2]/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <Image src={Logonav2} alt="Logo Pelvis Mujer" width={100} height={70} />
+    <nav className="sticky top-0 z-50 border-b border-crema/60 bg-white/90 backdrop-blur-md">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+        <div className="flex h-[4.5rem] items-center justify-between gap-6">
+          <Link href="/" className="shrink-0" aria-label="PelvisMujer — inicio">
+            <Image src={Logonav2} alt="Logo PelvisMujer" width={88} height={62} className="w-[72px] md:w-[88px] h-auto" priority />
+          </Link>
 
-          <ul className="hidden lg:flex gap-12 list-none m-0 p-0 items-center">
-            {navItems.map((item) => (
-              <li key={item.path} className="relative">
-                {item.children ? (
-                  <Dropdown label={item.label}>
-                    {item.children.map((sub) => (
-                      <li key={sub.path}>
-                        <Link
-                          href={sub.path}
-                          className="block px-5 py-2 text-[#2D2D2D] text-sm font-light hover:bg-[#EDD0B2]/20 hover:text-[#4E2226] transition-colors duration-200"
-                        >
-                          {sub.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </Dropdown>
-                ) : (
+          <ul className="hidden lg:flex items-center gap-7 list-none m-0 p-0">
+            {navItems.map((item) => {
+              const active = pathname === item.path
+              return (
+                <li key={item.path}>
                   <Link
                     href={item.path}
-                    className="text-[#2D2D2D] font-light text-sm py-2 px-1 border-b-2 border-transparent hover:text-[#4E2226] hover:border-[#ED4137] transition-all duration-300"
+                    className={`text-[0.9rem] py-1.5 transition-colors duration-300 border-b-2 ${
+                      active
+                        ? "text-morado border-rojo"
+                        : "text-marengo/80 font-normal border-transparent hover:text-morado hover:border-rojo/60"
+                    }`}
                   >
                     {item.label}
                   </Link>
-                )}
-              </li>
-            ))}
+                </li>
+              )
+            })}
+            <li>
+              <Link
+                href="/formulario"
+                className="ml-2 inline-flex items-center rounded-full bg-rojo-oscuro px-5 py-2.5 text-[0.9rem] font-medium text-white shadow-[0_10px_30px_-12px_rgba(226,39,39,0.55)] transition-all duration-300 hover:bg-[#c81f1f] hover:shadow-[0_14px_34px_-12px_rgba(226,39,39,0.65)] active:scale-[0.98]"
+              >
+                Agenda tu evaluación
+              </Link>
+            </li>
           </ul>
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-[#2D2D2D] hover:text-[#ED4137] transition-colors"
-            aria-label="Toggle menu"
+            className="lg:hidden flex h-11 w-11 items-center justify-center rounded-full text-morado transition-colors hover:bg-crema/40"
+            aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
+            aria-expanded={mobileOpen}
           >
             {mobileOpen ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 7h16M4 12h16M4 17h16" />
               </svg>
             )}
           </button>
         </div>
-
-        {mobileOpen && (
-          <div className="lg:hidden border-t border-[#EDD0B2] bg-white">
-            <ul className="flex flex-col list-none m-0 p-4 gap-1">
-              {navItems.map((item) => (
-                <li key={item.path}>
-                  {item.children ? (
-                    <div className="py-2">
-                      <p className="text-[#4E2226] font-light text-sm mb-2">{item.label}</p>
-                      <ul className="flex flex-col gap-1 pl-4 border-l border-[#EDD0B2]">
-                        {item.children.map((sub) => (
-                          <li key={sub.path}>
-                            <Link
-                              href={sub.path}
-                              className="block py-2 text-[#2D2D2D] text-sm font-light hover:text-[#ED4137] transition-colors"
-                              onClick={() => setMobileOpen(false)}
-                            >
-                              {sub.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ) : (
-                    <Link
-                      href={item.path}
-                      className="block py-2 text-[#2D2D2D] text-sm font-light hover:text-[#ED4137] transition-colors"
-                      onClick={() => setMobileOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
       </div>
-      <div className="border-b border-gray-100 mt-2"></div>
+
+      <div
+        className={`lg:hidden overflow-hidden border-t border-crema/60 bg-white transition-[max-height,opacity] duration-500 ease-out ${
+          mobileOpen ? "max-h-[28rem] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <ul className="flex flex-col list-none m-0 px-5 py-4 gap-1">
+          {navItems.map((item) => (
+            <li key={item.path}>
+              <Link
+                href={item.path}
+                className={`block rounded-lg px-3 py-3 text-[0.95rem] transition-colors ${
+                  pathname === item.path ? "bg-crema/30 text-morado font-medium" : "text-marengo/85 hover:bg-crema/25 hover:text-morado"
+                }`}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+          <li className="px-3 pb-2 pt-3">
+            <Link
+              href="/formulario"
+              className="inline-flex w-full items-center justify-center rounded-full bg-rojo-oscuro px-5 py-3 text-[0.95rem] font-medium text-white transition-colors hover:bg-[#c81f1f]"
+            >
+              Agenda tu evaluación
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   )
 }

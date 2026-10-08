@@ -1,62 +1,100 @@
-import Image from "next/image";
+import Image from "next/image"
+import Reveal from "./Reveal"
+
+const Flor = ({ className }) => (
+  <svg viewBox="0 0 80 80" fill="none" aria-hidden="true" className={className}>
+    <g>
+      <circle cx="40" cy="40" r="16" fill="#ED4137" />
+      {[...Array(8)].map((_, i) => (
+        <ellipse
+          key={i}
+          cx={40 + 28 * Math.cos((i * Math.PI) / 4)}
+          cy={40 + 28 * Math.sin((i * Math.PI) / 4)}
+          rx="10"
+          ry="20"
+          fill="#EDD0B2"
+          transform={`rotate(${i * 45} 40 40)`}
+        />
+      ))}
+    </g>
+  </svg>
+)
+
+const disciplinas = ["Kinesiología de piso pélvico", "Yoga", "Terapia Gestalt", "Neurociencia"]
 
 export default function Concepto() {
-    return (
-        <section className="flex flex-col-reverse items-center justify-center gap-6 px-4 py-8 md:flex-row md:gap-12 md:px-10 lg:px-20 min-h-[400px] md:min-h-[340px]">
-            {/* Imagen decorativa */}
-            <div className="relative flex-shrink-0 flex items-center justify-center w-full max-w-md md:max-w-lg lg:max-w-xl">
-                {/* Fondo decorativo con border-radius personalizado */}
-                <div className="absolute inset-0 rounded-[40%_40%_0_0/50%_50%_0_0] bg-[#EDD0B2] -z-10 w-full h-full" />
-                <Image
-                    src="/pregnant-woman-meditating-peacefully.jpg"
-                    alt="Mujer meditando"
-                    width={500}
-                    height={500}
-                    className="rounded-[40%_40%_0_0/50%_50%_0_0] object-cover w-full h-full shadow-xl"
-                />
-                {/* Imagen secundaria superpuesta */}
-                <div className="absolute left-[-60px] bottom-[-60px] w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64">
-                    <Image
-                        src="/woman-practicing-yoga-outdoors-in-nature.jpg"
-                        alt="Mujer practicando yoga"
-                        width={256}
-                        height={256}
-                        className="rounded-full object-cover w-full h-full border-4 border-white shadow-lg"
-                    />
-                </div>
-                {/* Flor decorativa */}
-                <div className="absolute right-[-40px] top-1/3">
-                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <circle cx="40" cy="40" r="16" fill="#ED4137" />
-                            {[...Array(8)].map((_, i) => (
-                                <ellipse
-                                    key={i}
-                                    cx={40 + 28 * Math.cos((i * Math.PI) / 4)}
-                                    cy={40 + 28 * Math.sin((i * Math.PI) / 4)}
-                                    rx="10"
-                                    ry="20"
-                                    fill="#EDD0B2"
-                                    transform={`rotate(${i * 45} 40 40)`}
-                                />
-                            ))}
-                        </g>
-                    </svg>
-                </div>
+  return (
+    <section id="concepto" className="relative overflow-hidden px-5 py-20 sm:px-8 md:py-28 lg:py-32">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 md:gap-16 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20">
+        {/* Composición fotográfica */}
+        <Reveal className="relative mx-auto w-full max-w-md md:max-w-none">
+          <div className="relative aspect-[4/5] w-[86%] md:w-[78%]">
+            <div className="absolute inset-0 rounded-t-full bg-crema" aria-hidden="true" />
+            <Image
+              src="/img/gestante-meditando.jpg"
+              alt="Gestante meditando con luz natural, atmósfera del trabajo de PelvisMujer"
+              width={520}
+              height={650}
+              className="relative h-full w-full rounded-t-full object-cover shadow-[0_36px_70px_-30px_rgba(78,34,38,0.4)]"
+            />
+          </div>
+
+          <div className="absolute bottom-6 right-0 w-[46%] max-w-[220px] md:-right-4">
+            <Image
+              src="/img/yoga-atardecer.jpg"
+              alt="Silueta practicando yoga al atardecer"
+              width={300}
+              height={380}
+              className="aspect-[4/5] w-full rounded-t-full border-[6px] border-white object-cover shadow-[0_28px_56px_-24px_rgba(78,34,38,0.45)]"
+            />
+          </div>
+
+          <Flor className="absolute -left-8 bottom-20 z-10 h-16 w-16 md:-left-12 lg:h-20 lg:w-20" />
+        </Reveal>
+
+        {/* Texto */}
+        <div className="max-w-xl">
+          <Reveal>
+            <h2 className="text-balance text-4xl leading-[1.1] text-rojo sm:text-5xl">Habitar tu cuerpo es volver a casa</h2>
+          </Reveal>
+
+          <Reveal delay={120}>
+            <div className="mt-8 space-y-5 text-[0.98rem] leading-relaxed text-marengo/90">
+              <p className="text-lg font-medium text-morado">
+                Soy Daniela Flores, Kinesióloga y fundadora de PelvisMujer.
+              </p>
+              <p>
+                Este espacio nace de una certeza: el cuerpo guarda una sabiduría que muchas veces olvidamos escuchar.
+                Mi camino comenzó en la búsqueda —en mis ciclos, mis dolores y mis emociones— hasta que una crisis
+                abrió un portal. Ahí entendí que acompañar no es solo tratar: es sostener procesos profundos de
+                reconexión.
+              </p>
+              <p>
+                Así nace PelvisMujer: una integración viva donde el cuerpo deja de ser algo que corregir y se
+                transforma en un territorio que habitar, honrar y despertar. Aquí, tu pelvis no es solo anatomía:
+                es raíz, centro y guía.
+              </p>
+              <p>
+                Acompaño a mujeres en cada etapa —ciclicidad, gestación, parto, posparto y climaterio— a volver a sí
+                mismas, con presencia, sensibilidad y verdad.
+              </p>
             </div>
-            {/* Texto */}
-            <div className="max-w-md w-full flex flex-col justify-center md:pl-2 lg:pl-6 space-y-2">
-                <h2 className="text-2xl md:text-3xl font-semibold text-[#ED4137] mb-3 font-heading">Habitar tu cuerpo es volver a casa</h2>
-                <p className="text-sm md:text-base text-[#2D2D2D] mb-2 leading-tight">
-                    Soy Daniela Flores, Kinesióloga y fundadora de PelvisMujer.<br /><br />
-                    Este espacio nace de una certeza: el cuerpo guarda una sabiduría que muchas veces olvidamos escuchar.<br /><br />
-                    Mi camino comenzó en la búsqueda, en mis ciclos, mis dolores y mis emociones, hasta que una crisis abrió un portal. Ahí entendí que acompañar no es solo tratar, es sostener procesos profundos de reconexión.<br /><br />
-                    Así nace PelvisMujer: una integración viva de Kinesiología de piso pélvico, yoga, meditación, terapia Gestalt y conciencia corporal. Un espacio donde el cuerpo deja de ser algo que corregir y se transforma en un territorio que habitar, honrar y despertar.<br /><br />
-                    Aquí, tu pelvis no es solo anatomía: es raíz, centro y guía.<br />
-                    Es el lugar desde donde puedes sanar, ordenar y reconectar con tu poder.<br /><br />
-                    Acompaño a mujeres en cada etapa: ciclicidad, gestación, parto, posparto y climaterio, a volver a sí mismas, con presencia, sensibilidad y verdad.
-                </p>
-            </div>
-        </section>
-    );
+          </Reveal>
+
+          <Reveal delay={220}>
+            <ul className="mt-8 flex flex-wrap gap-2.5">
+              {disciplinas.map((d) => (
+                <li
+                  key={d}
+                  className="rounded-full border border-morado/20 bg-crema/30 px-4 py-1.5 text-[0.8rem] font-medium text-morado"
+                >
+                  {d}
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+        </div>
+      </div>
+    </section>
+  )
 }

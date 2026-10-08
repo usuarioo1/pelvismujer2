@@ -1,0 +1,559 @@
+- generic [active] [ref=f7e1]:
+  - generic [ref=f7e3]:
+    - navigation [ref=f7e6]:
+      - link [ref=f7e8] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f7e12]:
+        - button [ref=f7e13] [cursor=pointer]
+        - button "Join" [ref=f7e17] [cursor=pointer]
+        - button [ref=f7e20] [cursor=pointer]
+    - main [ref=f7e25]:
+      - generic [ref=f7e26]:
+        - generic [ref=f7e30]:
+          - paragraph [ref=f7e32] [cursor=pointer]: Any
+          - paragraph [ref=f7e37] [cursor=pointer]: Horizontal
+          - paragraph [ref=f7e42] [cursor=pointer]: Vertical
+          - paragraph [ref=f7e47] [cursor=pointer]: Square
+        - generic [ref=f7e51]:
+          - paragraph [ref=f7e53] [cursor=pointer]: Any
+          - paragraph [ref=f7e55] [cursor=pointer]: "0"
+          - paragraph [ref=f7e60] [cursor=pointer]: "1"
+          - paragraph [ref=f7e65] [cursor=pointer]: "2"
+          - paragraph [ref=f7e70] [cursor=pointer]: 3+
+        - generic [ref=f7e74]:
+          - paragraph [ref=f7e76] [cursor=pointer]: Any
+          - paragraph [ref=f7e81] [cursor=pointer]: Baby
+          - paragraph [ref=f7e86] [cursor=pointer]: Child
+          - paragraph [ref=f7e91] [cursor=pointer]: Teenager
+          - paragraph [ref=f7e96] [cursor=pointer]: Adult
+          - paragraph [ref=f7e101] [cursor=pointer]: Senior adult
+        - generic [ref=f7e104]:
+          - generic [ref=f7e105]:
+            - generic [ref=f7e106] [cursor=pointer]
+            - slider [ref=f7e108] [cursor=pointer]
+            - slider [ref=f7e109] [cursor=pointer]
+          - generic [ref=f7e110]:
+            - generic [ref=f7e111]:
+              - paragraph [ref=f7e112]: Minimum
+              - paragraph [ref=f7e113]: 1,080px
+            - generic [ref=f7e114]:
+              - paragraph [ref=f7e115]: Maximum
+              - paragraph [ref=f7e116]: 20,000px+
+        - generic [ref=f7e119]:
+          - generic [ref=f7e120]:
+            - generic [ref=f7e121] [cursor=pointer]
+            - slider [ref=f7e123] [cursor=pointer]
+            - slider [ref=f7e124] [cursor=pointer]
+          - generic [ref=f7e125]:
+            - generic [ref=f7e126]:
+              - paragraph [ref=f7e127]: Minimum
+              - paragraph [ref=f7e128]: 1,080px
+            - generic [ref=f7e129]:
+              - paragraph [ref=f7e130]: Maximum
+              - paragraph [ref=f7e131]: 20,000px+
+        - generic [ref=f7e135]:
+          - button [ref=f7e136] [cursor=pointer]:
+            - textbox [ref=f7e142]:
+              - /placeholder: Enter hex code
+          - button [ref=f7e145] [cursor=pointer]:
+            - textbox [ref=f7e151]: "#000000"
+        - generic [ref=f7e155]:
+          - paragraph [ref=f7e157] [cursor=pointer]: Any
+          - paragraph [ref=f7e162] [cursor=pointer]: Last 24 hours
+          - paragraph [ref=f7e167] [cursor=pointer]: Last week
+          - paragraph [ref=f7e172] [cursor=pointer]: Last month
+          - paragraph [ref=f7e177] [cursor=pointer]: Last year
+        - main "main-content" [ref=f7e178]:
+          - generic [ref=f7e179]:
+            - generic [ref=f7e180]:
+              - heading "Choose your language:" [level=5] [ref=f7e181]
+              - generic [ref=f7e183]:
+                - link "English English" [ref=f7e185] [cursor=pointer]:
+                  - /url: /search/pregnant%20meditation/
+                  - generic [ref=f7e186]:
+                    - img "English" [ref=f7e187]
+                    - generic [ref=f7e188]: English
+                - link "Español Español" [ref=f7e189] [cursor=pointer]:
+                  - /url: /es-es/buscar/pregnant%20meditation/
+                  - generic [ref=f7e190]:
+                    - img "Español" [ref=f7e191]
+                    - generic [ref=f7e192]: Español
+                - button [ref=f7e193] [cursor=pointer]
+            - heading "Free Pregnant Meditation Photos" [level=1] [ref=f7e200]
+            - generic [ref=f7e203]:
+              - link "Photos 93.6K" [ref=f7e205] [cursor=pointer]:
+                - /url: /search/pregnant%20meditation/
+                - text: Photos
+                - generic [ref=f7e206]: 93.6K
+              - link "Videos 28.4K" [ref=f7e207] [cursor=pointer]:
+                - /url: /search/videos/pregnant%20meditation/
+                - text: Videos
+                - generic [ref=f7e208]: 28.4K
+              - link "Users 1.2K" [ref=f7e209] [cursor=pointer]:
+                - /url: /search/users/pregnant%20meditation/
+                - text: Users
+                - generic [ref=f7e210]: 1.2K
+              - img [ref=f7e211] [cursor=pointer]
+            - generic [ref=f7e214]:
+              - button "Filters" [ref=f7e216] [cursor=pointer]
+              - generic [ref=f7e226]:
+                - link [ref=f7e228] [cursor=pointer]:
+                  - /url: /search/pregnancy/
+                  - img "pregnancy" [ref=f7e229]
+                  - generic [ref=f7e230]:
+                    - paragraph [ref=f7e231]: pregnancy
+                    - paragraph [ref=f7e232]: 3K
+                - link [ref=f7e233] [cursor=pointer]:
+                  - /url: /search/meditation/
+                  - img "meditation" [ref=f7e234]
+                  - generic [ref=f7e235]:
+                    - paragraph [ref=f7e236]: meditation
+                    - paragraph [ref=f7e237]: 87K
+                - link [ref=f7e238] [cursor=pointer]:
+                  - /url: /search/pregnant/
+                  - img "pregnant" [ref=f7e239]
+                  - generic [ref=f7e240]:
+                    - paragraph [ref=f7e241]: pregnant
+                    - paragraph [ref=f7e242]: 4K
+                - link [ref=f7e243] [cursor=pointer]:
+                  - /url: /search/pregnant%20woman/
+                  - img "pregnant woman" [ref=f7e244]
+                  - generic [ref=f7e245]:
+                    - paragraph [ref=f7e246]: pregnant woman
+                    - paragraph [ref=f7e247]: 7K
+                - link [ref=f7e248] [cursor=pointer]:
+                  - /url: /search/pregnant%20women/
+                  - img "pregnant women" [ref=f7e249]
+                  - generic [ref=f7e250]:
+                    - paragraph [ref=f7e251]: pregnant women
+                    - paragraph [ref=f7e252]: 91K
+                - link [ref=f7e253] [cursor=pointer]:
+                  - /url: /search/meditating/
+                  - img "meditating" [ref=f7e254]
+                  - generic [ref=f7e255]:
+                    - paragraph [ref=f7e256]: meditating
+                    - paragraph [ref=f7e257]: 87K
+                - link [ref=f7e258] [cursor=pointer]:
+                  - /url: /search/pregnant%20belly/
+                  - img "pregnant belly" [ref=f7e259]
+                  - generic [ref=f7e260]:
+                    - paragraph [ref=f7e261]: pregnant belly
+                    - paragraph [ref=f7e262]: 12K
+                - link [ref=f7e263] [cursor=pointer]:
+                  - /url: /search/meditation%20and%20relaxation/
+                  - img "meditation and relaxation" [ref=f7e264]
+                  - generic [ref=f7e265]:
+                    - paragraph [ref=f7e266]: meditation and relaxation
+                    - paragraph [ref=f7e267]: 839K
+                - link [ref=f7e268] [cursor=pointer]:
+                  - /url: /search/meditate/
+                  - img "meditate" [ref=f7e269]
+                  - generic [ref=f7e270]:
+                    - paragraph [ref=f7e271]: meditate
+                    - paragraph [ref=f7e272]: 4K
+                - link [ref=f7e273] [cursor=pointer]:
+                  - /url: /search/meditation%20nature/
+                  - img "meditation nature" [ref=f7e274]
+                  - generic [ref=f7e275]:
+                    - paragraph [ref=f7e276]: meditation nature
+                    - paragraph [ref=f7e277]: 2M
+                - link [ref=f7e278] [cursor=pointer]:
+                  - /url: /search/woman%20meditating/
+                  - img "woman meditating" [ref=f7e279]
+                  - generic [ref=f7e280]:
+                    - paragraph [ref=f7e281]: woman meditating
+                    - paragraph [ref=f7e282]: 825K
+                - link [ref=f7e283] [cursor=pointer]:
+                  - /url: /search/yoga%20practice/
+                  - img "yoga practice" [ref=f7e284]
+                  - generic [ref=f7e285]:
+                    - paragraph [ref=f7e286]: yoga practice
+                    - paragraph [ref=f7e287]: 61K
+                - link [ref=f7e288] [cursor=pointer]:
+                  - /url: /search/pregnant%20couple/
+                  - img "pregnant couple" [ref=f7e289]
+                  - generic [ref=f7e290]:
+                    - paragraph [ref=f7e291]: pregnant couple
+                    - paragraph [ref=f7e292]: 122K
+                - link [ref=f7e293] [cursor=pointer]:
+                  - /url: /search/yoga/
+                  - img "yoga" [ref=f7e294]
+                  - generic [ref=f7e295]:
+                    - paragraph [ref=f7e296]: yoga
+                    - paragraph [ref=f7e297]: 19K
+                - link [ref=f7e298] [cursor=pointer]:
+                  - /url: /search/breathing%20exercise/
+                  - img "breathing exercise" [ref=f7e299]
+                  - generic [ref=f7e300]:
+                    - paragraph [ref=f7e301]: breathing exercise
+                    - paragraph [ref=f7e302]: 95K
+                - link [ref=f7e303] [cursor=pointer]:
+                  - /url: /search/yoga%20session/
+                  - img "yoga session" [ref=f7e304]
+                  - generic [ref=f7e305]:
+                    - paragraph [ref=f7e306]: yoga session
+                    - paragraph [ref=f7e307]: 53K
+            - generic [ref=f7e309]:
+              - generic [ref=f7e312]:
+                - article [ref=f7e316]:
+                  - link [ref=f7e317] [cursor=pointer]:
+                    - /url: /photo/pregnant-woman-doing-excercise-7155530/
+                    - img "Free Peaceful expectant mother meditating indoors, embracing pregnancy. Stock Photo" [ref=f7e318]
+                  - generic:
+                    - button "Retouch" [ref=f7e322] [cursor=pointer]
+                    - link "Download" [ref=f7e330] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7155530/pexels-photo-7155530.jpeg?cs=srgb&dl=pexels-yankrukov-7155530.jpg&fm=jpg
+                - article [ref=f7e337]:
+                  - link [ref=f7e338] [cursor=pointer]:
+                    - /url: /photo/pregnant-woman-doing-yoga-with-against-the-backdrop-of-a-cascading-waterfall-13911186/
+                    - img "Free Tranquil scene of a pregnant woman meditating near a waterfall, embracing serenity and nature. Stock Photo" [ref=f7e339]
+                  - generic:
+                    - button "Edit" [ref=f7e343] [cursor=pointer]
+                    - link "Download" [ref=f7e351] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/13911186/pexels-photo-13911186.jpeg?cs=srgb&dl=pexels-jonathanborba-13911186.jpg&fm=jpg
+                - generic [ref=f7e356]:
+                  - generic [ref=f7e358]:
+                    - link [ref=f7e359] [cursor=pointer]:
+                      - /url: https://www.canva.com/features/ai-image-generator/?prompt=High%20quality%20stock%20photo%20of%20pregnant%20meditation%2C%20professional%20lighting%2C%20sharp%20focus%2C%20natural%20colors%2C%20realistic%20detail%2C%20modern%20composition%2C%20commercial%20use%20standard%2C%20editorial%20style%2C%20ultra%20HD%2C%20clean%20background&utm_source=pexels&utm_campaign=aigc_pexelscampaign&utm_medium=partner
+                      - img "Create your own pregnant meditation content with Canva" [ref=f7e360]
+                    - link [ref=f7e361] [cursor=pointer]:
+                      - /url: https://www.canva.com/features/ai-image-generator/?prompt=High%20quality%20stock%20photo%20of%20pregnant%20meditation%2C%20professional%20lighting%2C%20sharp%20focus%2C%20natural%20colors%2C%20realistic%20detail%2C%20modern%20composition%2C%20commercial%20use%20standard%2C%20editorial%20style%2C%20ultra%20HD%2C%20clean%20background&utm_source=pexels&utm_campaign=aigc_pexelscampaign&utm_medium=partner
+                      - img "Create your own pregnant meditation content with Canva" [ref=f7e362]
+                    - link [ref=f7e363] [cursor=pointer]:
+                      - /url: https://www.canva.com/features/ai-image-generator/?prompt=High%20quality%20stock%20photo%20of%20pregnant%20meditation%2C%20professional%20lighting%2C%20sharp%20focus%2C%20natural%20colors%2C%20realistic%20detail%2C%20modern%20composition%2C%20commercial%20use%20standard%2C%20editorial%20style%2C%20ultra%20HD%2C%20clean%20background&utm_source=pexels&utm_campaign=aigc_pexelscampaign&utm_medium=partner
+                      - img "Create your own pregnant meditation content with Canva" [ref=f7e364]
+                    - link [ref=f7e365] [cursor=pointer]:
+                      - /url: https://www.canva.com/features/ai-image-generator/?prompt=High%20quality%20stock%20photo%20of%20pregnant%20meditation%2C%20professional%20lighting%2C%20sharp%20focus%2C%20natural%20colors%2C%20realistic%20detail%2C%20modern%20composition%2C%20commercial%20use%20standard%2C%20editorial%20style%2C%20ultra%20HD%2C%20clean%20background&utm_source=pexels&utm_campaign=aigc_pexelscampaign&utm_medium=partner
+                      - img "Create your own pregnant meditation content with Canva" [ref=f7e366]
+                  - link [ref=f7e367] [cursor=pointer]:
+                    - /url: https://www.canva.com/features/ai-image-generator/?prompt=High%20quality%20stock%20photo%20of%20pregnant%20meditation%2C%20professional%20lighting%2C%20sharp%20focus%2C%20natural%20colors%2C%20realistic%20detail%2C%20modern%20composition%2C%20commercial%20use%20standard%2C%20editorial%20style%2C%20ultra%20HD%2C%20clean%20background&utm_source=pexels&utm_campaign=aigc_pexelscampaign&utm_medium=partner
+                    - paragraph [ref=f7e370]: Bring your ideas to life with Canva AI
+                  - link "Get started for free" [ref=f7e371] [cursor=pointer]:
+                    - /url: https://www.canva.com/features/ai-image-generator/?prompt=High%20quality%20stock%20photo%20of%20pregnant%20meditation%2C%20professional%20lighting%2C%20sharp%20focus%2C%20natural%20colors%2C%20realistic%20detail%2C%20modern%20composition%2C%20commercial%20use%20standard%2C%20editorial%20style%2C%20ultra%20HD%2C%20clean%20background&utm_source=pexels&utm_campaign=aigc_pexelscampaign&utm_medium=partner
+                - article [ref=f7e377]:
+                  - link [ref=f7e378] [cursor=pointer]:
+                    - /url: /photo/a-pregnant-woman-meditating-while-sitting-on-yoga-mat-7055715/
+                    - img "Free Pregnant woman in activewear meditates indoors, focusing on wellness and mindfulness. Stock Photo" [ref=f7e379]
+                  - generic:
+                    - button "Crop" [ref=f7e383] [cursor=pointer]
+                    - link "Download" [ref=f7e391] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7055715/pexels-photo-7055715.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-7055715.jpg&fm=jpg
+                - article [ref=f7e398]:
+                  - link [ref=f7e399] [cursor=pointer]:
+                    - /url: /photo/pregnant-woman-sitting-on-grass-while-meditating-13865902/
+                    - img "Free Pregnant woman meditating on the grass, embracing wellness and tranquility outdoors. Stock Photo" [ref=f7e400]
+                  - generic:
+                    - button "Adjust Colors" [ref=f7e404] [cursor=pointer]
+                    - link "Download" [ref=f7e412] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/13865902/pexels-photo-13865902.jpeg?cs=srgb&dl=pexels-ray-lei-2809836-13865902.jpg&fm=jpg
+                - article [ref=f7e419]:
+                  - link [ref=f7e420] [cursor=pointer]:
+                    - /url: /photo/a-pregnant-woman-meditating-at-home-7155535/
+                    - img "Free Serene pregnant woman meditating in lotus position at home, focusing on mindfulness and wellbeing. Stock Photo" [ref=f7e421]
+                  - generic:
+                    - button "Remove Background" [ref=f7e425] [cursor=pointer]
+                    - link "Download" [ref=f7e433] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7155535/pexels-photo-7155535.jpeg?cs=srgb&dl=pexels-yankrukov-7155535.jpg&fm=jpg
+                - article [ref=f7e440]:
+                  - link [ref=f7e441] [cursor=pointer]:
+                    - /url: /photo/pregnant-woman-doing-excercise-7155527/
+                    - img "Free A pregnant woman in a peaceful yoga pose indoors, promoting positive wellness. Stock Photo" [ref=f7e442]
+                  - generic:
+                    - button "Add Text" [ref=f7e446] [cursor=pointer]
+                    - link "Download" [ref=f7e454] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7155527/pexels-photo-7155527.jpeg?cs=srgb&dl=pexels-yankrukov-7155527.jpg&fm=jpg
+                - article [ref=f7e461]:
+                  - link [ref=f7e462] [cursor=pointer]:
+                    - /url: /photo/pregnant-woman-practicing-mindful-yoga-meditation-38263218/
+                    - img "Free Pregnant woman sitting cross-legged on a green yoga mat, meditating with a calm expression indoors. Stock Photo" [ref=f7e463]
+                  - generic:
+                    - button "Edit" [ref=f7e467] [cursor=pointer]
+                    - link "Download" [ref=f7e475] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/38263218/pexels-photo-38263218.jpeg?cs=srgb&dl=pexels-rishikesh-yogkulam-2162495697-38263218.jpg&fm=jpg
+                - article [ref=f7e482]:
+                  - link [ref=f7e483] [cursor=pointer]:
+                    - /url: /photo/a-pregnant-woman-meditating-while-sitting-on-a-couch-7993393/
+                    - img "Free Expectant woman meditating on a yellow couch in a cozy home setting, emphasizing relaxation and self-care. Stock Photo" [ref=f7e484]
+                  - generic:
+                    - button "Remove Background" [ref=f7e488] [cursor=pointer]
+                    - link "Download" [ref=f7e496] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7993393/pexels-photo-7993393.jpeg?cs=srgb&dl=pexels-ivan-s-7993393.jpg&fm=jpg
+                - article [ref=f7e503]:
+                  - link [ref=f7e504] [cursor=pointer]:
+                    - /url: /photo/a-woman-stretching-her-neck-in-meditation-7155553/
+                    - img "Free Pregnant woman in lotus position meditating and stretching at home. Stock Photo" [ref=f7e505]
+                  - generic:
+                    - button "Remove Background" [ref=f7e509] [cursor=pointer]
+                    - link "Download" [ref=f7e517] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7155553/pexels-photo-7155553.jpeg?cs=srgb&dl=pexels-yankrukov-7155553.jpg&fm=jpg
+                - article [ref=f7e524]:
+                  - link [ref=f7e525] [cursor=pointer]:
+                    - /url: /photo/pregnant-woman-doing-a-yoga-pose-on-yoga-mat-13911188/
+                    - img "Free Pregnant woman meditating in a serene forest setting on a yoga mat, embracing nature with calmness. Stock Photo" [ref=f7e526]
+                  - generic:
+                    - button "Retouch" [ref=f7e530] [cursor=pointer]
+                    - link "Download" [ref=f7e538] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/13911188/pexels-photo-13911188.jpeg?cs=srgb&dl=pexels-jonathanborba-13911188.jpg&fm=jpg
+                - article [ref=f7e545]:
+                  - link [ref=f7e546] [cursor=pointer]:
+                    - /url: /photo/a-pregnant-woman-meditating-7155354/
+                    - img "Free Expectant mother practicing meditation at home for healthy living. Stock Photo" [ref=f7e547]
+                  - generic:
+                    - button "Edit" [ref=f7e551] [cursor=pointer]
+                    - link "Download" [ref=f7e559] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7155354/pexels-photo-7155354.jpeg?cs=srgb&dl=pexels-yankrukov-7155354.jpg&fm=jpg
+                - article [ref=f7e566]:
+                  - link [ref=f7e567] [cursor=pointer]:
+                    - /url: /photo/woman-in-sportswear-doing-yoga-while-sitting-on-the-floor-4229201/
+                    - img "Free Pregnant woman in sportswear meditating indoors, promoting relaxation and mindfulness. Stock Photo" [ref=f7e568]
+                  - generic:
+                    - button "Add Text" [ref=f7e572] [cursor=pointer]
+                    - link "Download" [ref=f7e580] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/4229201/pexels-photo-4229201.jpeg?cs=srgb&dl=pexels-carlos-ruiz-2665870-4229201.jpg&fm=jpg
+                - article [ref=f7e587]:
+                  - link [ref=f7e588] [cursor=pointer]:
+                    - /url: /photo/a-woman-wearing-gray-tank-top-in-yoga-pose-7055721/
+                    - img "Free Calm pregnant woman practicing yoga and meditation indoors for relaxation. Stock Photo" [ref=f7e589]
+                  - generic:
+                    - button "Crop" [ref=f7e593] [cursor=pointer]
+                    - link "Download" [ref=f7e601] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7055721/pexels-photo-7055721.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-7055721.jpg&fm=jpg
+                - article [ref=f7e608]:
+                  - link [ref=f7e609] [cursor=pointer]:
+                    - /url: /photo/a-woman-meditating-7055701/
+                    - img "Free Pregnant woman meditating with eyes closed and hands in Namaste pose, wearing a sports bra. Stock Photo" [ref=f7e610]
+                  - generic:
+                    - button "Remove Background" [ref=f7e614] [cursor=pointer]
+                    - link "Download" [ref=f7e622] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7055701/pexels-photo-7055701.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-7055701.jpg&fm=jpg
+                - article [ref=f7e629]:
+                  - link [ref=f7e630] [cursor=pointer]:
+                    - /url: /photo/a-pregnant-woman-meditating-7155367/
+                    - img "Free A serene pregnant woman practicing meditation indoors for healthy living. Stock Photo" [ref=f7e631]
+                  - generic:
+                    - button "Remove Background" [ref=f7e635] [cursor=pointer]
+                    - link "Download" [ref=f7e643] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7155367/pexels-photo-7155367.jpeg?cs=srgb&dl=pexels-yankrukov-7155367.jpg&fm=jpg
+                - article [ref=f7e650]:
+                  - link [ref=f7e651] [cursor=pointer]:
+                    - /url: /photo/a-woman-meditation-in-half-lotus-position-7155549/
+                    - img "Free Pregnant woman meditating in half lotus position at home, promoting prenatal health and relaxation. Stock Photo" [ref=f7e652]
+                  - generic:
+                    - button "Crop" [ref=f7e656] [cursor=pointer]
+                    - link "Download" [ref=f7e664] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7155549/pexels-photo-7155549.jpeg?cs=srgb&dl=pexels-yankrukov-7155549.jpg&fm=jpg
+                - link [ref=f7e669] [cursor=pointer]:
+                  - /url: /collections/meditation-bij989p/
+                  - article [ref=f7e670]:
+                    - list [ref=f7e672]:
+                      - listitem [ref=f7e673]
+                      - listitem [ref=f7e675]
+                      - listitem [ref=f7e677]
+                    - generic [ref=f7e679]:
+                      - heading "Meditation" [level=4] [ref=f7e680]
+                      - paragraph [ref=f7e684]: "81"
+                - article [ref=f7e688]:
+                  - link [ref=f7e689] [cursor=pointer]:
+                    - /url: /photo/young-woman-stretching-while-sitting-on-a-rock-in-a-creek-in-a-park-13911193/
+                    - img "Free Pregnant woman practicing yoga and meditation on a rock beside a serene waterfall in a forest. Stock Photo" [ref=f7e690]
+                  - generic:
+                    - button "Remove Background" [ref=f7e694] [cursor=pointer]
+                    - link "Download" [ref=f7e702] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/13911193/pexels-photo-13911193.jpeg?cs=srgb&dl=pexels-jonathanborba-13911193.jpg&fm=jpg
+                - article [ref=f7e709]:
+                  - link [ref=f7e710] [cursor=pointer]:
+                    - /url: /photo/pregnant-woman-doing-excercise-7155538/
+                    - img "Free A pregnant woman practices meditation on an exercise ball indoors. Stock Photo" [ref=f7e711]
+                  - generic:
+                    - button "Adjust Colors" [ref=f7e715] [cursor=pointer]
+                    - link "Download" [ref=f7e723] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7155538/pexels-photo-7155538.jpeg?cs=srgb&dl=pexels-yankrukov-7155538.jpg&fm=jpg
+                - article [ref=f7e730]:
+                  - link [ref=f7e731] [cursor=pointer]:
+                    - /url: /photo/a-pregnant-woman-on-a-yoga-mat-7055705/
+                    - img "Free Pregnant woman practicing yoga indoors, promoting wellness and mindfulness. Stock Photo" [ref=f7e732]
+                  - generic:
+                    - button "Add Text" [ref=f7e736] [cursor=pointer]
+                    - link "Download" [ref=f7e744] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7055705/pexels-photo-7055705.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-7055705.jpg&fm=jpg
+                - article [ref=f7e751]:
+                  - link [ref=f7e752] [cursor=pointer]:
+                    - /url: /photo/a-pregnant-meditating-in-half-lotus-pose-7155546/
+                    - img "Free Pregnant woman meditating in a relaxed yoga pose indoors. Stock Photo" [ref=f7e753]
+                  - generic:
+                    - button "Edit" [ref=f7e757] [cursor=pointer]
+                    - link "Download" [ref=f7e765] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7155546/pexels-photo-7155546.jpeg?cs=srgb&dl=pexels-yankrukov-7155546.jpg&fm=jpg
+                - article [ref=f7e772]:
+                  - link [ref=f7e773] [cursor=pointer]:
+                    - /url: /photo/a-woman-doing-a-yoga-pose-7055694/
+                    - img "Free A pregnant woman in activewear practicing yoga indoors, promoting fitness and wellness. Stock Photo" [ref=f7e774]
+                  - generic:
+                    - button "Edit" [ref=f7e778] [cursor=pointer]
+                    - link "Download" [ref=f7e786] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7055694/pexels-photo-7055694.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-7055694.jpg&fm=jpg
+                - article [ref=f7e793]:
+                  - link [ref=f7e794] [cursor=pointer]:
+                    - /url: /photo/close-up-of-woman-relaxing-during-prenatal-yoga-session-34317999/
+                    - img "Free A pregnant woman relaxing in a prenatal yoga session focusing on breathing and mindfulness. Stock Photo" [ref=f7e795]
+                  - generic:
+                    - button "Crop" [ref=f7e799] [cursor=pointer]
+                    - link "Download" [ref=f7e807] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/34317999/pexels-photo-34317999.jpeg?cs=srgb&dl=pexels-davegarcia-34317999.jpg&fm=jpg
+                - article [ref=f7e814]:
+                  - link [ref=f7e815] [cursor=pointer]:
+                    - /url: /photo/pregnant-woman-doing-excercise-7155395/
+                    - img "Free Expectant mother practicing yoga indoors, embracing a healthy lifestyle. Stock Photo" [ref=f7e816]
+                  - generic:
+                    - button "Add Text" [ref=f7e820] [cursor=pointer]
+                    - link "Download" [ref=f7e828] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/7155395/pexels-photo-7155395.jpeg?cs=srgb&dl=pexels-yankrukov-7155395.jpg&fm=jpg
+                - article [ref=f7e835]:
+                  - link [ref=f7e836] [cursor=pointer]:
+                    - /url: /photo/woman-in-white-sportswear-sitting-on-yoga-mat-13911185/
+                    - img "Free Pregnant woman in meditation pose on yoga mat in a peaceful forest setting. Stock Photo" [ref=f7e837]
+                  - generic:
+                    - button "Add Text" [ref=f7e841] [cursor=pointer]
+                    - link "Download" [ref=f7e849] [cursor=pointer]:
+                      - /url: https://images.pexels.com/photos/13911185/pexels-photo-13911185.jpeg?cs=srgb&dl=pexels-jonathanborba-13911185.jpg&fm=jpg
+              - button "Load More" [ref=f7e854] [cursor=pointer]
+            - navigation [ref=f7e857]:
+              - generic [ref=f7e859]:
+                - link "1" [ref=f7e861]:
+                  - /url: /search/pregnant%20meditation/
+                - link "2" [ref=f7e864] [cursor=pointer]:
+                  - /url: /search/pregnant%20meditation/?page=2
+                - link "3" [ref=f7e867] [cursor=pointer]:
+                  - /url: /search/pregnant%20meditation/?page=3
+                - link "4" [ref=f7e870] [cursor=pointer]:
+                  - /url: /search/pregnant%20meditation/?page=4
+                - link "5" [ref=f7e873] [cursor=pointer]:
+                  - /url: /search/pregnant%20meditation/?page=5
+                - link "6" [ref=f7e876] [cursor=pointer]:
+                  - /url: /search/pregnant%20meditation/?page=6
+                - link "Next" [ref=f7e879] [cursor=pointer]:
+                  - /url: /search/pregnant%20meditation/?page=2
+    - contentinfo [ref=f7e883]:
+      - separator [ref=f7e884]
+      - generic [ref=f7e885]:
+        - generic [ref=f7e886]:
+          - heading "Where stories come together." [level=2] [ref=f7e887]
+          - generic [ref=f7e888]:
+            - link "iOS" [ref=f7e889] [cursor=pointer]:
+              - /url: https://itunes.apple.com/us/app/pexels/id1434330413/
+            - link "Android" [ref=f7e892] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.pexels.app
+          - list [ref=f7e895]:
+            - listitem [ref=f7e896]:
+              - link "Instagram" [ref=f7e897] [cursor=pointer]:
+                - /url: https://www.instagram.com/pexels/
+            - listitem [ref=f7e900]:
+              - link "Threads" [ref=f7e901] [cursor=pointer]:
+                - /url: https://www.threads.net/@pexels/
+            - listitem [ref=f7e904]:
+              - link "YouTube" [ref=f7e905] [cursor=pointer]:
+                - /url: https://www.youtube.com/pexelsphotos/
+            - listitem [ref=f7e908]:
+              - link "TikTok" [ref=f7e909] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@pexels/
+            - listitem [ref=f7e912]:
+              - link "LinkedIn" [ref=f7e913] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/pexels/
+            - listitem [ref=f7e916]:
+              - link "X" [ref=f7e917] [cursor=pointer]:
+                - /url: https://x.com/pexels/
+        - generic [ref=f7e920]:
+          - list [ref=f7e921]:
+            - heading "Pexels" [level=3] [ref=f7e922]
+            - listitem [ref=f7e923]:
+              - link "Free Stock Photos" [ref=f7e924] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f7e925]:
+              - link "Free Videos" [ref=f7e926] [cursor=pointer]:
+                - /url: /videos/
+            - listitem [ref=f7e927]:
+              - link "Popular searches" [ref=f7e928] [cursor=pointer]:
+                - /url: /popular-searches/
+            - listitem [ref=f7e929]:
+              - link "Collections" [ref=f7e930] [cursor=pointer]:
+                - /url: /discover/
+            - listitem [ref=f7e931]:
+              - link "Challenges" [ref=f7e932] [cursor=pointer]:
+                - /url: /challenges/
+            - listitem [ref=f7e933]:
+              - link "Leaderboard" [ref=f7e934] [cursor=pointer]:
+                - /url: /leaderboard/
+            - listitem [ref=f7e935]:
+              - link "Other plugins & apps" [ref=f7e936] [cursor=pointer]:
+                - /url: /pro/
+          - list [ref=f7e937]:
+            - heading "Company" [level=3] [ref=f7e938]
+            - listitem [ref=f7e939]:
+              - link "About" [ref=f7e940] [cursor=pointer]:
+                - /url: /about/
+            - listitem [ref=f7e941]:
+              - link "Blog" [ref=f7e942] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f7e943]:
+              - link "Help Center" [ref=f7e944] [cursor=pointer]:
+                - /url: https://help.pexels.com/hc/en-us
+            - listitem [ref=f7e945]:
+              - link "Report content" [ref=f7e946] [cursor=pointer]:
+                - /url: /report/
+            - listitem [ref=f7e947]:
+              - link "Become a Hero" [ref=f7e948] [cursor=pointer]:
+                - /url: /hero/
+            - listitem [ref=f7e949]:
+              - link "Partner with Pexels" [ref=f7e950] [cursor=pointer]:
+                - /url: /become-a-partner/
+            - listitem [ref=f7e951]:
+              - link "Image & Video API" [ref=f7e952] [cursor=pointer]:
+                - /url: /api/
+            - listitem [ref=f7e953]: Sign Up
+        - list [ref=f7e954]:
+          - listitem [ref=f7e955]:
+            - heading "Free Stock Photos" [level=3] [ref=f7e956]
+          - listitem [ref=f7e957]:
+            - generic [ref=f7e959]:
+              - link "4K wallpaper" [ref=f7e961] [cursor=pointer]:
+                - /url: /search/4k%20wallpaper/
+              - link "Nature photos" [ref=f7e962] [cursor=pointer]:
+                - /url: /search/nature/
+              - link "Desktop wallpaper" [ref=f7e963] [cursor=pointer]:
+                - /url: /search/desktop%20wallpaper/
+              - link "Flower photos" [ref=f7e964] [cursor=pointer]:
+                - /url: /search/flowers/
+              - link "HD wallpaper" [ref=f7e965] [cursor=pointer]:
+                - /url: /search/hd%20wallpaper/
+              - link "Mobile wallpaper" [ref=f7e966] [cursor=pointer]:
+                - /url: /search/mobile%20wallpaper/
+              - link "Dark photos" [ref=f7e967] [cursor=pointer]:
+                - /url: /search/dark/
+              - link "Black and white photography" [ref=f7e968] [cursor=pointer]:
+                - /url: /search/black%20and%20white/
+              - link "Black background" [ref=f7e969] [cursor=pointer]:
+                - /url: /search/black%20background/
+              - link "Sunset photos" [ref=f7e970] [cursor=pointer]:
+                - /url: /search/sunset/
+              - link "Landscape photos" [ref=f7e971] [cursor=pointer]:
+                - /url: /search/landscape/
+              - link "Cat photos" [ref=f7e972] [cursor=pointer]:
+                - /url: /search/cat/
+      - generic [ref=f7e974]:
+        - generic [ref=f7e975]: © 2026 Pexels
+        - generic [ref=f7e977]:
+          - link "Terms of Use" [ref=f7e979] [cursor=pointer]:
+            - /url: /terms-of-service/
+          - link "Privacy Policy" [ref=f7e980] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "License" [ref=f7e981] [cursor=pointer]:
+            - /url: /license/
+          - link "Imprint" [ref=f7e982] [cursor=pointer]:
+            - /url: /imprint/
+          - link "Cookies Policy" [ref=f7e983] [cursor=pointer]:
+            - /url: /cookies/
+          - img [ref=f7e984] [cursor=pointer]
+        - button "English" [ref=f7e988] [cursor=pointer]
+      - separator [ref=f7e993]
+  - alert [ref=f7e994]
+  - status [ref=f7e995]: "[object Object] has been selected."

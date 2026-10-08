@@ -1,0 +1,25 @@
+- main [ref=f3e2]:
+  - heading "¡Asegurándonos de que no eres un robot!" [level=1] [ref=f3e3]
+  - generic [ref=f3e4]:
+    - paragraph [ref=f3e6]: "Calculando...Dificultad: 5, Velocidad: 0kH/s"
+    - 'progressbar "Calculando... Dificultad: 5, Velocidad: 0kH/s" [ref=f3e7]'
+    - group [ref=f3e8]
+  - generic [ref=f3e10]:
+    - paragraph [ref=f3e11]:
+      - text: Protegido por
+      - link "BotStopper" [ref=f3e12] [cursor=pointer]:
+        - /url: https://anubis.techaro.lol/docs/admin/botstopper
+      - text: From
+      - link "Techaro" [ref=f3e13] [cursor=pointer]:
+        - /url: https://techaro.lol
+      - text: . Hecho con ❤️ en 🇨🇦.
+    - paragraph [ref=f3e14]:
+      - text: Unsplash |
+      - link "Help Center" [ref=f3e15] [cursor=pointer]:
+        - /url: https://help.unsplash.com/
+      - text: "|"
+      - link "support@unsplash.com" [ref=f3e16] [cursor=pointer]:
+        - /url: mailto:support@unsplash.com
+      - text: "--"
+      - link "Imprint" [ref=f3e17] [cursor=pointer]:
+        - /url: /.within.website/x/cmd/anubis/api/imprint

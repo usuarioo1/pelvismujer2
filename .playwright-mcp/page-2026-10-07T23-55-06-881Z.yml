@@ -1,0 +1,127 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - img "Logo Pelvis Mujer" [ref=e5]
+      - button "Toggle menu" [ref=e6]
+  - generic [ref=e10]:
+    - generic [ref=e11]:
+      - img "Mujer en conexión con su cuerpo" [ref=e13]
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - heading "Bienvenida a PelvisMujer" [level=1] [ref=e19]: Bienvenida aPelvisMujer
+          - generic [ref=e20]:
+            - paragraph [ref=e21]: Un espacio para reconectar con tu cuerpo, tu centro y tu poder.
+            - paragraph [ref=e22]: Acompañamos a mujeres en cada etapa de su ciclo vital, ciclicidad, gestación, parto y posparto, integrando Kinesiología de piso pélvico, yoga, terapia Gestalt y neurociencia.
+            - paragraph [ref=e23]: Aquí comienza un viaje de autoconocimiento, sensibilidad y presencia. Tu cuerpo es tu hogar.
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - generic [ref=e27]:
+              - img "Membresía" [ref=e28]
+              - generic [ref=e30]:
+                - paragraph [ref=e31]: Planes
+                - heading "Membresía" [level=3] [ref=e32]
+            - generic [ref=e34]:
+              - img "Planes de clases" [ref=e35]
+              - generic [ref=e37]:
+                - paragraph [ref=e38]: Planes
+                - heading "Planes de clases" [level=3] [ref=e39]
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - button "Anterior" [ref=e42]
+              - button "Siguiente" [ref=e45]
+            - generic [ref=e49]: "01"
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - img "Mujer meditando" [ref=e53]
+        - img "Mujer practicando yoga" [ref=e55]
+      - generic [ref=e68]:
+        - heading "Habitar tu cuerpo es volver a casa" [level=2] [ref=e69]
+        - paragraph [ref=e70]: "Soy Daniela Flores, Kinesióloga y fundadora de PelvisMujer.Este espacio nace de una certeza: el cuerpo guarda una sabiduría que muchas veces olvidamos escuchar.Mi camino comenzó en la búsqueda, en mis ciclos, mis dolores y mis emociones, hasta que una crisis abrió un portal. Ahí entendí que acompañar no es solo tratar, es sostener procesos profundos de reconexión.Así nace PelvisMujer: una integración viva de Kinesiología de piso pélvico, yoga, meditación, terapia Gestalt y conciencia corporal. Un espacio donde el cuerpo deja de ser algo que corregir y se transforma en un territorio que habitar, honrar y despertar.Aquí, tu pelvis no es solo anatomía: es raíz, centro y guía.Es el lugar desde donde puedes sanar, ordenar y reconectar con tu poder.Acompaño a mujeres en cada etapa: ciclicidad, gestación, parto, posparto y climaterio, a volver a sí mismas, con presencia, sensibilidad y verdad."
+    - generic [ref=e72]:
+      - generic [ref=e73]:
+        - generic [ref=e74]: ¿Por qué elegir PelvisMujer?
+        - paragraph [ref=e87]: Acá no tratamos cuerpos como máquinas. Escuchamos historias. No buscamos corregirte ni decirte cómo debería funcionar tu cuerpo. Acompañamos tu proceso de rehabilitación desde la escucha, el movimiento y la conciencia corporal. No intervenimos desde afuera. Te invitamos a volver a tu centro, a comprender lo que ocurre en tu cuerpo y a recuperar la confianza en él. Porque rehabilitar no es simplemente corregir una función. Es volver a sentirte, reconocerte y habitarte. PelvisMujer es un espacio para habitar tu cuerpo.
+        - generic [ref=e88]:
+          - link "Ir a Membresía - Raíz cíclica" [ref=e89] [cursor=pointer]:
+            - /url: /membresiaRaizCiclica
+          - link "Contáctame" [ref=e90] [cursor=pointer]:
+            - /url: /formulario
+      - generic [ref=e91]:
+        - generic [ref=e92]:
+          - heading "Mirada integral cuerpo–mente–emoción" [level=3] [ref=e93]
+          - paragraph [ref=e94]: Un enfoque que une Kinesiología, yoga, Gestalt y neurociencia para comprender tu cuerpo como un sistema completo, sensible y vivo.
+        - generic [ref=e95]:
+          - heading "Acompañamiento consciente en todas las etapas de la vida femenina" [level=3] [ref=e96]
+          - paragraph [ref=e97]: "No solo tratamos síntomas: te acompañamos en tus ciclos, gestación, parto, posparto y madurez, honrando tu historia y tu proceso."
+        - generic [ref=e98]:
+          - heading "Espacio seguro para habitar tu cuerpo" [level=3] [ref=e99]
+          - paragraph [ref=e100]: Más que un tratamiento, es un viaje de autoconocimiento. Aquí encuentras contención, presencia y un trabajo profundo que te ayuda a reconectar con tu centro, tu fuerza y tu poder.
+        - img "Mujer meditando" [ref=e102]
+    - generic [ref=e103]:
+      - heading "Programas más elegidos" [level=2] [ref=e104]
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - img "Programa personalizado" [ref=e108]
+          - generic [ref=e109]:
+            - 'heading "Programa personalizado: Kinesiología de preparación al parto" [level=3] [ref=e110]'
+            - paragraph [ref=e111]: Acompañamiento individual de Kinesiología y preparación al parto para vivir tu gestación con calma, conexión y confianza. A través de movimiento, respiración, manejo del dolor y preparación del piso pélvico, te guiamos hacia un parto seguro, presente y empoderado. Presencial u online, reembolsable.
+        - generic [ref=e112]:
+          - img "Taller de preparación al parto" [ref=e114]
+          - generic [ref=e115]:
+            - 'heading "Taller de preparación al parto: \"Pelvis libre y parto respetado\"" [level=3] [ref=e116]'
+            - paragraph [ref=e117]: Taller personalizado donde aprenderás movimientos, respiración, vocalización y técnicas de manejo del dolor para un parto fluido y consciente. Integra Kinesiología, yoga y neurociencia para soltar miedos, aliviar tensiones y fortalecer tu confianza. Puedes asistir con tu acompañante. Reembolsable
+        - generic [ref=e118]:
+          - img "Membresía Raíz cíclica" [ref=e120]
+          - generic [ref=e121]:
+            - heading "Membresía Raíz cíclica" [level=3] [ref=e122]
+            - paragraph [ref=e123]: Espacio online de autocuidado femenino para habitar tu cuerpo en todas tus etapas. Combina Kinesiología de piso pélvico, yoga, meditación y Gestalt para acompañarte en menstruación, gestación, posparto y climaterio. Un círculo íntimo para volver a tu raíz y nutrir tu bienestar cíclico.
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - heading "Quién te acompaña" [level=2] [ref=e127]
+        - heading "Conoce a nuestras profesionales" [level=3] [ref=e128]
+        - paragraph [ref=e129]: En PelvisMujer trabajamos unidas para acompañarte desde una mirada integral y consciente. Somos profesionales de la Kinesiología especializada en embarazo, post parto y piso pélvico, el yoga y la terapia Gestalt, dedicadas a guiarte en cada etapa de tu vida con respeto, presencia y calidez. Creemos en el cuerpo como territorio de transformación y en la importancia de un acompañamiento humano, científico y amoroso. Aquí encontrarás un equipo que escucha, contiene y camina contigo hacia tu bienestar.
+      - generic [ref=e130]:
+        - generic [ref=e132]:
+          - img "Daniela Flores Rojas" [ref=e137]
+          - img "Lupita" [ref=e142]
+        - button "Anterior" [ref=e143]
+        - button "Siguiente" [ref=e146]
+        - generic [ref=e149]:
+          - heading "Daniela Flores Rojas" [level=4] [ref=e150]
+          - paragraph [ref=e151]: Kinesióloga especializada en embarazo y piso pélvico
+        - generic [ref=e152]:
+          - button "Ir a profesional 1" [ref=e153]
+          - button "Ir a profesional 2" [ref=e154]
+  - contentinfo [ref=e155]:
+    - generic [ref=e157]:
+      - generic [ref=e158]:
+        - heading "PelvisMujer" [level=3] [ref=e159]
+        - paragraph [ref=e160]: Un viaje de autoconocimiento integral para la mujer
+      - generic [ref=e161]:
+        - heading "Navegación" [level=4] [ref=e162]
+        - list [ref=e163]:
+          - listitem [ref=e164]:
+            - link "Inicio" [ref=e165] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e166]:
+            - link "Quiénes Somos" [ref=e167] [cursor=pointer]:
+              - /url: /quienes-somos
+          - listitem [ref=e168]:
+            - link "Términos y Condiciones" [ref=e169] [cursor=pointer]:
+              - /url: /terminos-condiciones
+      - generic [ref=e170]:
+        - heading "Únete a nuestra comunidad" [level=4] [ref=e171]
+        - generic [ref=e172]:
+          - link "Facebook" [ref=e173] [cursor=pointer]:
+            - /url: https://facebook.com
+          - link "Instagram" [ref=e176] [cursor=pointer]:
+            - /url: https://instagram.com
+          - link "YouTube" [ref=e179] [cursor=pointer]:
+            - /url: https://youtube.com
+      - generic [ref=e182]:
+        - heading "Métodos de Pago" [level=4] [ref=e183]
+        - generic [ref=e184]:
+          - img [ref=e185]:
+            - generic [ref=e187]: MP
+          - generic [ref=e188]: Mercado Pago
+    - paragraph [ref=e191]: © 2026 PelvisMujer. Todos los derechos reservados.

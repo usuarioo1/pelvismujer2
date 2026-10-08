@@ -1,88 +1,91 @@
-import Image from "next/image";
+import Image from "next/image"
+import Link from "next/link"
+import Reveal from "./Reveal"
 
 export default function Caracteristicas() {
-    return (
-        <section className="relative w-full flex flex-col md:flex-row items-center justify-center px-4 py-12 md:py-20 bg-[#F8F6F3] overflow-hidden">
-            {/* Fondo decorativo */}
-            <div className="absolute inset-0 pointer-events-none select-none flex justify-center items-center">
-                <div className="w-full h-full bg-gradient-to-r from-[#EDD0B2]/40 via-transparent to-[#EDD0B2]/40 rounded-[8%]" />
+  return (
+    <section className="relative overflow-hidden bg-[#F7F2EA] px-5 py-20 sm:px-8 md:py-28 lg:py-32">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 lg:grid-cols-[0.92fr_1.08fr] lg:gap-20">
+        {/* Texto principal */}
+        <div className="max-w-xl">
+          <Reveal>
+            <h2 className="text-balance text-4xl leading-[1.1] text-morado sm:text-5xl">¿Por qué elegir PelvisMujer?</h2>
+          </Reveal>
+
+          <Reveal delay={120}>
+            <p className="font-decorative mt-7 text-xl italic leading-snug text-morado sm:text-2xl">
+              “Acá no tratamos cuerpos como máquinas. Escuchamos historias.”
+            </p>
+          </Reveal>
+
+          <Reveal delay={200}>
+            <div className="mt-6 space-y-5 text-[0.98rem] leading-relaxed text-marengo/90">
+              <p>
+                No buscamos corregirte ni decirte cómo debería funcionar tu cuerpo. Acompañamos tu proceso de
+                rehabilitación desde la escucha, el movimiento y la conciencia corporal: te invitamos a volver a tu
+                centro, a comprender lo que ocurre en tu cuerpo y a recuperar la confianza en él.
+              </p>
+              <p>
+                Porque rehabilitar no es simplemente corregir una función: es volver a sentirte, reconocerte y
+                habitarte. PelvisMujer es un espacio para habitar tu cuerpo.
+              </p>
             </div>
-            {/* Contenido principal */}
-            <div className="relative z-10 flex flex-col md:flex-row w-full max-w-6xl gap-10 md:gap-16">
-                {/* Texto principal y botones */}
-                <div className="flex-1 flex flex-col justify-center items-start gap-6 max-w-lg">
-                    <div className="flex items-center gap-3 mb-2">
-                        {/* Flor decorativa */}
-                        <svg width="36" height="36" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <circle cx="40" cy="40" r="12" fill="#ED4137" />
-                                {[...Array(8)].map((_, i) => (
-                                    <ellipse
-                                        key={i}
-                                        cx={40 + 18 * Math.cos((i * Math.PI) / 4)}
-                                        cy={40 + 18 * Math.sin((i * Math.PI) / 4)}
-                                        rx="7"
-                                        ry="14"
-                                        fill="#EDD0B2"
-                                        transform={`rotate(${i * 45} 40 40)`}
-                                    />
-                                ))}
-                            </g>
-                        </svg>
-                        <span className="text-4xl font-medium text-[#4E2226] font-decorative">¿Por qué elegir PelvisMujer?</span>
-                    </div>
-                    <p className="text-base text-[#2D2D2D] mb-2">
-                       Acá no tratamos cuerpos como máquinas. Escuchamos historias.
+          </Reveal>
 
-No buscamos corregirte ni decirte cómo debería funcionar tu cuerpo. Acompañamos tu proceso de rehabilitación desde la escucha, el movimiento y la conciencia corporal.
-
-No intervenimos desde afuera. Te invitamos a volver a tu centro, a comprender lo que ocurre en tu cuerpo y a recuperar la confianza en él.
-
-Porque rehabilitar no es simplemente corregir una función.
-Es volver a sentirte, reconocerte y habitarte.
-
-PelvisMujer es un espacio para habitar tu cuerpo.
-                    </p>
-                    <div className="flex gap-4 mt-2">
-                        <a href="/membresiaRaizCiclica" className="px-5 py-2 rounded-md border-2 border-[#4E2226] text-[#4E2226] font-medium bg-white hover:bg-[#EDD0B2]/30 transition">Ir a Membresía - Raíz cíclica</a>
-                        <a href="/formulario" className="px-5 py-2 rounded-md border-2 border-[#ED4137] text-white font-medium bg-[#ED4137] hover:bg-[#E22727] transition">Contáctame</a>
-                    </div>
-                </div>
-                {/* Cards en cuadrícula 2x2 */}
-                <div className="flex-1 grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-6">
-                    {/* Card 1 */}
-                    <div className="rounded-2xl bg-[#EDD0B2]/50 p-6 shadow-md flex flex-col justify-between">
-                        <h3 className="text-lg font-semibold text-[#4E2226] mb-2">Mirada integral cuerpo–mente–emoción</h3>
-                        <p className="text-sm text-[#2D2D2D]">
-                            Un enfoque que une Kinesiología, yoga, Gestalt y neurociencia para comprender tu cuerpo como un sistema completo, sensible y vivo.
-                        </p>
-                    </div>
-                    {/* Card 2 */}
-                    <div className="rounded-2xl bg-[#ED4137] p-6 shadow-md flex flex-col justify-between">
-                        <h3 className="text-lg font-semibold text-white mb-2">Acompañamiento consciente en todas las etapas de la vida femenina</h3>
-                        <p className="text-sm text-white/90">
-                            No solo tratamos síntomas: te acompañamos en tus ciclos, gestación, parto, posparto y madurez, honrando tu historia y tu proceso.
-                        </p>
-                    </div>
-                    {/* Card 3 */}
-                    <div className="rounded-2xl bg-[#4E2226] p-6 shadow-md flex flex-col justify-between">
-                        <h3 className="text-lg font-semibold text-white mb-2">Espacio seguro para habitar tu cuerpo</h3>
-                        <p className="text-sm text-white/90">
-                            Más que un tratamiento, es un viaje de autoconocimiento. Aquí encuentras contención, presencia y un trabajo profundo que te ayuda a reconectar con tu centro, tu fuerza y tu poder.
-                        </p>
-                    </div>
-                    {/* Card 4: Foto */}
-                    <div className="flex items-end justify-center rounded-2xl overflow-hidden shadow-lg bg-white">
-                        <Image
-                            src="/pregnant-woman-meditating-peacefully.jpg"
-                            alt="Mujer meditando"
-                            width={400}
-                            height={340}
-                            className="object-cover w-full h-[180px] md:h-[340px]"
-                        />
-                    </div>
-                </div>
+          <Reveal delay={280}>
+            <div className="mt-9 flex flex-wrap gap-4">
+              <Link
+                href="/membresiaRaizCiclica"
+                className="inline-flex items-center rounded-full border border-morado/30 px-6 py-3 text-[0.95rem] font-medium text-morado transition-all duration-300 hover:border-morado hover:bg-morado hover:text-crema"
+              >
+                Conocer la membresía Raíz Cíclica
+              </Link>
+              <Link
+                href="/formulario"
+                className="inline-flex items-center rounded-full bg-rojo-oscuro px-6 py-3 text-[0.95rem] font-medium text-white shadow-[0_14px_32px_-14px_rgba(226,39,39,0.55)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#c81f1f] active:translate-y-0"
+              >
+                Contáctame
+              </Link>
             </div>
-        </section>
-    );
+          </Reveal>
+        </div>
+
+        {/* Teselas cualidades */}
+        <Reveal delay={150} className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:gap-6">
+          <div className="rounded-[1.6rem] bg-crema/60 p-7 shadow-[0_20px_44px_-24px_rgba(78,34,38,0.25)] sm:mt-10">
+            <h3 className="text-lg font-semibold leading-snug text-morado">Mirada integral cuerpo–mente–emoción</h3>
+            <p className="mt-3 text-[0.9rem] leading-relaxed text-marengo/85">
+              Un enfoque que une Kinesiología, yoga, Gestalt y neurociencia para comprender tu cuerpo como un sistema
+              completo, sensible y vivo.
+            </p>
+          </div>
+
+          <div className="rounded-[1.6rem] bg-rojo-oscuro p-7 text-white shadow-[0_24px_48px_-24px_rgba(226,39,39,0.5)]">
+            <h3 className="text-lg font-semibold leading-snug">Acompañamiento consciente en todas las etapas</h3>
+            <p className="mt-3 text-[0.9rem] leading-relaxed text-white/90">
+              Te acompañamos en tus ciclos, gestación, parto, posparto y madurez, honrando tu historia y tu proceso.
+            </p>
+          </div>
+
+          <div className="rounded-[1.6rem] bg-morado p-7 text-crema shadow-[0_24px_48px_-24px_rgba(78,34,38,0.55)]">
+            <h3 className="text-lg font-semibold leading-snug">Espacio seguro para habitar tu cuerpo</h3>
+            <p className="mt-3 text-[0.9rem] leading-relaxed text-crema/85">
+              Más que un tratamiento, es un viaje de autoconocimiento: contención, presencia y un trabajo profundo
+              para reconectar con tu centro, tu fuerza y tu poder.
+            </p>
+          </div>
+
+          <div className="relative overflow-hidden rounded-[1.6rem] shadow-[0_24px_48px_-24px_rgba(78,34,38,0.35)] sm:-mt-10">
+            <Image
+              src="/img/yoga-grupo-playa.jpg"
+              alt="Clase de yoga al aire libre, el movimiento como práctica diaria"
+              width={480}
+              height={520}
+              className="h-full min-h-[15rem] w-full object-cover"
+            />
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  )
 }
