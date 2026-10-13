@@ -129,7 +129,7 @@ html.js-reveal .reveal--focus.is-visible {
   filter: blur(0);
 }
 
-/* ── Variante "portal": el arco se abre (foto enfoca, línea se dibuja) ── */
+/* ── Variante "portal": la foto grande llega desenfocada y enfoca ── */
 html.js-reveal .reveal--portal:not(.is-visible) {
   opacity: 1;
   transform: none;
@@ -152,14 +152,6 @@ html.js-reveal .reveal--portal:not(.is-visible) .portal-frame {
 
 html.js-reveal .reveal--portal:not(.is-visible) .portal-mini {
   transform: translateY(18px) rotate(2.5deg);
-}
-
-.portal-ring path {
-  transition: stroke-dashoffset 1.6s cubic-bezier(0.22, 1, 0.36, 1) 0.25s;
-}
-
-html.js-reveal .reveal--portal:not(.is-visible) .portal-ring path {
-  stroke-dashoffset: 1;
 }
 
 /* ── Variante "chips": la lista entra como lista, con compás corto ── */
@@ -230,10 +222,6 @@ html.js-reveal .reveal--tinta:not(.is-visible) .tinta-trazo path {
   }
   html.js-reveal .reveal--portal:not(.is-visible) .portal-mini {
     transform: none;
-    transition: none;
-  }
-  html.js-reveal .reveal--portal:not(.is-visible) .portal-ring path {
-    stroke-dashoffset: 0;
     transition: none;
   }
   html.js-reveal .reveal--chips li {

@@ -28,33 +28,14 @@ export default function Concepto() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 md:gap-16 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20">
         {/* Composición fotográfica: el portal */}
         <Reveal variant="portal" className="relative mx-auto w-full max-w-md md:max-w-none">
-          {/* Eco de arco: la línea del portal se dibuja alrededor de la foto */}
           <div className="relative w-[86%] md:w-[78%]">
-            <svg
-              viewBox="0 0 400 500"
-              fill="none"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-              className="portal-ring pointer-events-none absolute -inset-3 z-0 overflow-visible"
-            >
-              <path
-                d="M -12 512 V 200 A 212 212 0 0 1 412 200 V 512"
-                stroke="rgba(78,34,38,0.35)"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                pathLength={1}
-                strokeDasharray="1"
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-
             <div className="portal-frame relative aspect-[4/5] w-full">
               <Image
                 src="/img/gestante-meditando.jpg"
                 alt="Gestante meditando con luz natural, atmósfera del trabajo de PelvisMujer"
                 width={520}
                 height={650}
-                className="relative h-full w-full rounded-t-full object-cover shadow-[0_36px_70px_-30px_rgba(78,34,38,0.4)]"
+                className="relative h-full w-full rounded-t-full border-[6px] border-white object-cover shadow-[0_36px_70px_-30px_rgba(78,34,38,0.4)]"
               />
             </div>
           </div>
