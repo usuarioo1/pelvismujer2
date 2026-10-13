@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react"
 
-export default function Reveal({ children, delay = 0, className = "", as: Tag = "div" }) {
+export default function Reveal({ children, delay = 0, className = "", as: Tag = "div", variant }) {
   const ref = useRef(null)
 
   useEffect(() => {
@@ -29,8 +29,10 @@ export default function Reveal({ children, delay = 0, className = "", as: Tag = 
     return () => observer.disconnect()
   }, [])
 
+  const variantClass = variant ? ` reveal--${variant}` : ""
+
   return (
-    <Tag ref={ref} className={`reveal ${className}`} style={{ "--reveal-delay": `${delay}ms` }}>
+    <Tag ref={ref} className={`reveal${variantClass} ${className}`} style={{ "--reveal-delay": `${delay}ms` }}>
       {children}
     </Tag>
   )

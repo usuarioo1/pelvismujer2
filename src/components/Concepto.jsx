@@ -24,22 +24,42 @@ const disciplinas = ["Kinesiología de piso pélvico", "Yoga", "Terapia Gestalt"
 
 export default function Concepto() {
   return (
-    <section id="concepto" className="relative overflow-hidden px-5 py-20 sm:px-8 md:py-28 lg:py-32">
+    <section id="concepto" className="relative overflow-hidden bg-crema px-5 py-20 sm:px-8 md:py-28 lg:py-32">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 md:gap-16 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20">
-        {/* Composición fotográfica */}
-        <Reveal className="relative mx-auto w-full max-w-md md:max-w-none">
-          <div className="relative aspect-[4/5] w-[86%] md:w-[78%]">
-            <div className="absolute inset-0 rounded-t-full bg-crema" aria-hidden="true" />
-            <Image
-              src="/img/gestante-meditando.jpg"
-              alt="Gestante meditando con luz natural, atmósfera del trabajo de PelvisMujer"
-              width={520}
-              height={650}
-              className="relative h-full w-full rounded-t-full object-cover shadow-[0_36px_70px_-30px_rgba(78,34,38,0.4)]"
-            />
+        {/* Composición fotográfica: el portal */}
+        <Reveal variant="portal" className="relative mx-auto w-full max-w-md md:max-w-none">
+          {/* Eco de arco: la línea del portal se dibuja alrededor de la foto */}
+          <div className="relative w-[86%] md:w-[78%]">
+            <svg
+              viewBox="0 0 400 500"
+              fill="none"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+              className="portal-ring pointer-events-none absolute -inset-3 z-0 overflow-visible"
+            >
+              <path
+                d="M -12 512 V 200 A 212 212 0 0 1 412 200 V 512"
+                stroke="rgba(78,34,38,0.35)"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                pathLength={1}
+                strokeDasharray="1"
+                vectorEffect="non-scaling-stroke"
+              />
+            </svg>
+
+            <div className="portal-frame relative aspect-[4/5] w-full">
+              <Image
+                src="/img/gestante-meditando.jpg"
+                alt="Gestante meditando con luz natural, atmósfera del trabajo de PelvisMujer"
+                width={520}
+                height={650}
+                className="relative h-full w-full rounded-t-full object-cover shadow-[0_36px_70px_-30px_rgba(78,34,38,0.4)]"
+              />
+            </div>
           </div>
 
-          <div className="absolute bottom-6 right-0 w-[46%] max-w-[220px] md:-right-4">
+          <div className="portal-mini absolute bottom-6 right-0 w-[46%] max-w-[220px] md:-right-4">
             <Image
               src="/img/yoga-atardecer.jpg"
               alt="Silueta practicando yoga al atardecer"
@@ -49,13 +69,16 @@ export default function Concepto() {
             />
           </div>
 
-          <Flor className="absolute -left-8 bottom-20 z-10 h-16 w-16 md:-left-12 lg:h-20 lg:w-20" />
+          {/* El sello de la marca, girando con el ciclo */}
+          <Flor className="animate-flor absolute bottom-16 left-3 z-10 h-16 w-16 md:left-5 md:h-20 md:w-20" />
         </Reveal>
 
         {/* Texto */}
         <div className="max-w-xl">
-          <Reveal>
-            <h2 className="text-balance text-4xl leading-[1.1] text-rojo sm:text-5xl">Habitar tu cuerpo es volver a casa</h2>
+          <Reveal variant="focus">
+            <h2 className="text-balance text-4xl leading-[1.12] text-morado sm:text-5xl">
+              Habitar tu cuerpo es volver a casa
+            </h2>
           </Reveal>
 
           <Reveal delay={120}>
@@ -71,8 +94,8 @@ export default function Concepto() {
               </p>
               <p>
                 Así nace PelvisMujer: una integración viva donde el cuerpo deja de ser algo que corregir y se
-                transforma en un territorio que habitar, honrar y despertar. Aquí, tu pelvis no es solo anatomía:
-                es raíz, centro y guía.
+                transforma en un territorio que habitar, honrar y despertar. Aquí, tu pelvis no es solo anatomía:{" "}
+                <strong className="font-medium text-morado">es raíz, centro y guía</strong>.
               </p>
               <p>
                 Acompaño a mujeres en cada etapa —ciclicidad, gestación, parto, posparto y climaterio— a volver a sí
@@ -81,12 +104,13 @@ export default function Concepto() {
             </div>
           </Reveal>
 
-          <Reveal delay={220}>
+          <Reveal variant="chips" delay={220}>
             <ul className="mt-8 flex flex-wrap gap-2.5">
-              {disciplinas.map((d) => (
+              {disciplinas.map((d, i) => (
                 <li
                   key={d}
-                  className="rounded-full border border-morado/20 bg-crema/30 px-4 py-1.5 text-[0.8rem] font-medium text-morado"
+                  style={{ "--i": i }}
+                  className="rounded-full border border-morado/20 bg-white/50 px-4 py-1.5 text-[0.8rem] font-medium text-morado"
                 >
                   {d}
                 </li>

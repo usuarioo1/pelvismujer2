@@ -110,6 +110,99 @@ html.js-reveal .reveal:not(.is-visible) {
   transform: translateY(0);
 }
 
+/* ── Variante "focus": llegada con enfoque (blur→nítido) ── */
+.reveal--focus {
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+html.js-reveal .reveal--focus:not(.is-visible) {
+  opacity: 0;
+  transform: translateY(16px);
+  filter: blur(10px);
+}
+
+html.js-reveal .reveal--focus.is-visible {
+  filter: blur(0);
+}
+
+/* ── Variante "portal": el arco se abre (foto enfoca, línea se dibuja) ── */
+html.js-reveal .reveal--portal:not(.is-visible) {
+  opacity: 1;
+  transform: none;
+}
+
+.portal-frame {
+  transition:
+    filter 1.15s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html.js-reveal .reveal--portal:not(.is-visible) .portal-frame {
+  filter: blur(14px);
+  transform: scale(1.06);
+}
+
+.portal-mini {
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.4s;
+}
+
+html.js-reveal .reveal--portal:not(.is-visible) .portal-mini {
+  transform: translateY(18px) rotate(2.5deg);
+}
+
+.portal-ring path {
+  transition: stroke-dashoffset 1.6s cubic-bezier(0.22, 1, 0.36, 1) 0.25s;
+}
+
+html.js-reveal .reveal--portal:not(.is-visible) .portal-ring path {
+  stroke-dashoffset: 1;
+}
+
+/* ── Variante "chips": la lista entra como lista, con compás corto ── */
+html.js-reveal .reveal--chips li {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.55s ease,
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--reveal-delay, 0ms) + var(--i, 0) * 65ms);
+}
+
+html.js-reveal .reveal--chips.is-visible li {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Variante "tinta": el subrayado a mano se traza sobre la frase ── */
+.reveal--tinta .tinta-trazo path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.95s cubic-bezier(0.22, 1, 0.36, 1) 0.55s;
+}
+
+html.js-reveal .reveal--tinta:not(.is-visible) .tinta-trazo path {
+  stroke-dashoffset: 1;
+}
+
+/* ── El ciclo: la flor de la marca respira, un vaivén lento de sello ── */
+@keyframes flor-vaiven {
+  0%,
+  100% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+}
+
+.animate-flor {
+  animation: flor-vaiven 11s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -120,8 +213,37 @@ html.js-reveal .reveal:not(.is-visible) {
     transition: none;
   }
   .animate-slow-zoom,
-  .animate-hero-fade {
+  .animate-hero-fade,
+  .animate-flor {
     animation: none !important;
+  }
+  html.js-reveal .reveal--focus:not(.is-visible) {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+  html.js-reveal .reveal--portal:not(.is-visible) .portal-frame {
+    filter: none;
+    transform: none;
+    transition: none;
+  }
+  html.js-reveal .reveal--portal:not(.is-visible) .portal-mini {
+    transform: none;
+    transition: none;
+  }
+  html.js-reveal .reveal--portal:not(.is-visible) .portal-ring path {
+    stroke-dashoffset: 0;
+    transition: none;
+  }
+  html.js-reveal .reveal--chips li {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html.js-reveal .reveal--tinta:not(.is-visible) .tinta-trazo path {
+    stroke-dashoffset: 0;
+    transition: none;
   }
 }
 
