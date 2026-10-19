@@ -41,6 +41,9 @@ export default function ContactForm() {
     telefono: '',
     programa: '',
   });
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [enviado, setEnviado] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -52,22 +55,55 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Aquí puedes agregar la lógica para enviar el formulario
-    console.log('Datos del formulario:', formData);
-    // Resetear el formulario después del envío
-    setFormData({
-      nombre: '',
-      email: '',
-      telefono: '',
-      programa: '',
-    });
+    setError('');
+    setLoading(true);
+    try {
+      const res = await fetch('/api/contacto', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setError(data.error || 'No se pudo enviar la solicitud');
+        return;
+      }
+      setFormData({
+        nombre: '',
+        email: '',
+        telefono: '',
+        programa: '',
+      });
+      setEnviado(true);
+    } catch {
+      setError('Error de conexión. Inténtalo de nuevo.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-sm">
       <h2 className="text-2xl font-semibold text-[#4E2226] mb-6">Contáctanos</h2>
-      <form onSubmit={handleSubmit} className="space-y-6">
-        <div>
+      {enviado ? (
+        <div className="text-center py-10">
+          <p className="text-lg font-medium text-[#4E2226] mb-2">¡Solicitud enviada!</p>
+          <p className="text-[#2D2D2D]/70 mb-6">Gracias por escribirnos. Te contactaremos pronto.</p>
+          <button
+            onClick={() => setEnviado(false)}
+            className="inline-flex items-center rounded-full border border-[#ED4137] px-6 py-2.5 text-[0.9rem] font-medium text-[#ED4137] transition-colors hover:bg-[#ED4137] hover:text-white"
+          >
+            Enviar otra solicitud
+          </button>
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit} className="space-y-6">
+          {error && (
+            <div className="rounded-md border border-[#ED4137]/30 bg-[#ED4137]/5 px-4 py-3 text-sm text-[#E22727]" role="alert">
+              {error}
+            </div>
+          )}
+          <div>
           <label htmlFor="nombre" className="block text-sm font-medium text-[#2D2D2D] mb-1">
             Nombre completo
           </label>
@@ -146,7 +182,8 @@ export default function ContactForm() {
         >
           Enviar mensaje
         </button>
-      </form>
+        </form>
+      )}
     </div>
   );
 }

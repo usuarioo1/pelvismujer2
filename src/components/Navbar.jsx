@@ -24,20 +24,20 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 border-b border-crema/60 bg-white/90 backdrop-blur-md">
-      <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <div className="flex h-[4.5rem] items-center justify-between gap-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-[4.5rem] items-center justify-between gap-4">
           <Link href="/" className="shrink-0" aria-label="PelvisMujer — inicio">
-            <Image src={Logonav2} alt="Logo PelvisMujer" width={88} height={62} className="w-[72px] md:w-[88px] h-auto" priority />
+            <Image src={Logonav2} alt="Logo PelvisMujer" width={88} height={62} className="w-[64px] lg:w-[76px] xl:w-[88px] h-auto" priority />
           </Link>
 
-          <ul className="hidden lg:flex items-center gap-7 list-none m-0 p-0">
+          <ul className="hidden lg:flex items-center gap-2.5 xl:gap-4 list-none m-0 p-0">
             {navItems.map((item) => {
               const active = pathname === item.path
               return (
                 <li key={item.path}>
                   <Link
                     href={item.path}
-                    className={`text-[0.9rem] py-1.5 transition-colors duration-300 border-b-2 ${
+                    className={`whitespace-nowrap text-[0.82rem] xl:text-[0.9rem] py-1.5 transition-colors duration-300 border-b-2 ${
                       active
                         ? "text-morado border-rojo"
                         : "text-marengo/80 font-normal border-transparent hover:text-morado hover:border-rojo/60"
@@ -51,9 +51,30 @@ export default function Navbar() {
             <li>
               <Link
                 href="/formulario"
-                className="ml-2 inline-flex items-center rounded-full bg-rojo-oscuro px-5 py-2.5 text-[0.9rem] font-medium text-white shadow-[0_10px_30px_-12px_rgba(226,39,39,0.55)] transition-all duration-300 hover:bg-[#c81f1f] hover:shadow-[0_14px_34px_-12px_rgba(226,39,39,0.65)] active:scale-[0.98]"
+                className="inline-flex items-center whitespace-nowrap rounded-full bg-rojo-oscuro px-4 py-2.5 text-[0.82rem] xl:text-[0.9rem] font-medium text-white shadow-[0_10px_30px_-12px_rgba(226,39,39,0.55)] transition-all duration-300 hover:bg-[#c81f1f] hover:shadow-[0_14px_34px_-12px_rgba(226,39,39,0.65)] active:scale-[0.98]"
               >
                 Agenda tu evaluación
+              </Link>
+            </li>
+            <li aria-hidden="true" className="mx-1 hidden h-7 w-px bg-crema lg:block" />
+            <li className="hidden xl:block">
+              <Link
+                href="/login"
+                className={`whitespace-nowrap text-[0.82rem] xl:text-[0.9rem] py-1.5 transition-colors duration-300 ${
+                  pathname === "/login" ? "text-morado" : "text-marengo/70 hover:text-morado"
+                }`}
+              >
+                Iniciar sesión
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/registro"
+                className={`whitespace-nowrap text-[0.82rem] xl:text-[0.9rem] py-1.5 font-medium transition-colors duration-300 ${
+                  pathname === "/registro" ? "text-rojo" : "text-morado hover:text-rojo"
+                }`}
+              >
+                Regístrate
               </Link>
             </li>
           </ul>
@@ -79,7 +100,7 @@ export default function Navbar() {
 
       <div
         className={`lg:hidden overflow-hidden border-t border-crema/60 bg-white transition-[max-height,opacity] duration-500 ease-out ${
-          mobileOpen ? "max-h-[28rem] opacity-100" : "max-h-0 opacity-0"
+          mobileOpen ? "max-h-[36rem] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <ul className="flex flex-col list-none m-0 px-5 py-4 gap-1">
@@ -102,6 +123,30 @@ export default function Navbar() {
             >
               Agenda tu evaluación
             </Link>
+          </li>
+          <li className="px-3 pt-2">
+            <div className="grid grid-cols-2 gap-3 border-t border-crema/60 pt-4">
+              <Link
+                href="/login"
+                className={`inline-flex items-center justify-center rounded-full border px-4 py-2.5 text-[0.9rem] transition-colors ${
+                  pathname === "/login"
+                    ? "border-morado bg-crema/30 text-morado font-medium"
+                    : "border-crema text-morado hover:border-morado/50"
+                }`}
+              >
+                Iniciar sesión
+              </Link>
+              <Link
+                href="/registro"
+                className={`inline-flex items-center justify-center rounded-full px-4 py-2.5 text-[0.9rem] transition-colors ${
+                  pathname === "/registro"
+                    ? "bg-morado text-crema font-medium"
+                    : "bg-morado/90 text-crema hover:bg-morado"
+                }`}
+              >
+                Regístrate
+              </Link>
+            </div>
           </li>
         </ul>
       </div>

@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# datos de auth/contactos (base de datos local)
+/data
+.playwright-mcp/

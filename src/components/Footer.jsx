@@ -72,6 +72,11 @@ export default function Footer() {
                   Términos y Condiciones
                 </Link>
               </li>
+              <li>
+                <Link href="/login" className="text-sm text-crema/70 underline-offset-4 transition-colors hover:text-white hover:underline">
+                  Iniciar sesión
+                </Link>
+              </li>
             </ul>
           </div>
 
